@@ -1,0 +1,43 @@
+<DOCTYPE html>
+  <html>
+    <head>
+      <title>javascript arrays methods part 1</title>
+      <style>
+        body {
+          text-align: center;
+        }
+      </style>
+    </head>
+    <body>
+      <h1>creating arays method by using concat()</h1>
+      <script>
+        var array1 = ["vish", "vishu", "vishal"];
+        var array2 = ["sanjay", "p", "reddy"];
+        var array3 = ["50", "70", "20"];
+        var array4 = ["10", ["20","30"]];
+        function check(value) {
+          return value > 30;
+        }
+        console.log("arays method by using every()");
+        console.log(array3.every(check)); //checking for every value in array3 for greater than 30
+
+        console.log(array1.concat(array2));
+
+        console.log("arays method by using copywithin()");
+        console.log(array2.copyWithin(0, 1, 2)); //start from 1 copywithin 1 and 2 & 2 is end
+
+        console.log("arays method by using entries()");
+        var entriesArray = array2.entries(); //when you want to print values with position use entries
+        for (value of entriesArray) {
+          console.log(value + "<br>");
+        }
+
+        console.log("craeting single array from multidiamensional array by using flat()");
+        console.log(array4.flat());
+
+        console.log("creating single array from multidiamensional array and apply mapping by using flatMap()");
+        console.log(array4.flatMap(x => [x/2]));
+      </script>
+    </body>
+  </html>
+</DOCTYPE>

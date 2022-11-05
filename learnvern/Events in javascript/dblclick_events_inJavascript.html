@@ -1,0 +1,44 @@
+<DOCTYPE html>
+  <html>
+    <head>
+      <title>Javascript Click Events</title>
+    </head>
+    <body>
+      <h1>Javascript Click Events: using onclick attribute in HTML</h1>
+      <button ondblclick="warning()">Click here</button>
+
+      <script>
+        function warning() {
+          alert("hey you please focus on your studies");
+        }
+      </script>
+      <h1>Javascript Click Events: using Javascript</h1>
+      <button id="mybutton">Click here</button>
+
+      <script>
+        document.getElementById("mybutton").ondblclick = function warning() {
+          alert("hey you please focus on your studies");
+        };
+      </script>
+      <h1>Javascript Click Events: using addEventListener</h1>
+      <button id="mybutton">Click here</button>
+
+      <script>
+        document
+          .getElementById("mybutton")
+          .addEventListener("dblclick", warning);
+        function warning() {
+          alert("hey you please focus on your studies");
+        }
+      </script>
+      <h2 ondblclick="onDblclick()">Double click here!</h2>
+      <p id="p1"></p>
+      <script>
+        function onDblclick() {
+          document.getElementById("p1").innerHTML =
+            "This is double click event in Javascript";
+        }
+      </script>
+    </body>
+  </html>
+</DOCTYPE>

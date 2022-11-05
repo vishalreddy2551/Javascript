@@ -1,0 +1,35 @@
+<DOCTYPE html>
+    <html>
+      <head>
+        <title>Inheritance in javascript </title>
+        <style>
+          body {
+            text-align: center;
+          }
+        </style>
+      </head>
+      <body>
+        <h3>Inheritance in javascript: prototype based approach</h3>
+         <script>
+         function Bike(company) {
+         this.company = company;
+         }
+         Bike.prototype.getCompany = function(
+         //whenever we work with prototype we create function insted of class
+         //by using prootype we will link function with methods
+         ){
+            return this.company;
+         }
+         function Vechile(name,cc){
+            this.name = name;
+            this.cc = cc;
+         }
+         var bike = new Bike("Bajaj");//function object
+         Vechile.prototype = Bike;//vechile will become child of bike and can acces all the properties
+         var v1 = new Vechile("Pulsar","180F")
+         document.writeln(v1.name + "-" + v1.cc);
+        </script>
+        
+      </body>
+    </html>
+  </DOCTYPE>

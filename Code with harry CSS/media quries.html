@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Quries</title>
+    <!-- Media query is way to make websites Responsive  -->
+    <style>
+        .box{
+          font-size: 60px;
+          color: white;
+          background-color: red;
+          text-align: center;
+          /* display: none; */
+          border: 2px solid yellow;
+        }
+        @media (max-width:200px)
+        #box-1{
+            display: block;
+        }
+        @media (max-width:500px) and (min-width:50px)
+        #box-2{
+            display: block;
+            /* background-color : brown; */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box" id="box-1">Vishal Reddy</div>
+        <div class="box" id="box-2">Vishal Reddy</div>
+        <div class="box" id="box-3">Vishal Reddy</div>
+        <div class="box" id="box-4">Vishal Reddy</div>
+
+    </div>
+  
+</body>
+</html>

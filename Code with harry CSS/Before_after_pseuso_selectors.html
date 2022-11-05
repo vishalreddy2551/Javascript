@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Before and after pseudo selectors</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald&family=Playfair+Display:ital@1&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+        margin: 0;
+      }
+      header {
+        display: flex;
+        flex-direction: column;
+      }
+      body {
+        background-color: black;
+        /* background-image:url(/abstract-1231863_1920.jpg); */
+       
+      }
+       header::before{
+        /* background-image: url(/abstract-1231863_1920.jpg); */
+        position: absolute;
+        width: 20%;
+        height: 100%;
+       }
+      section {
+        /* display: flex; */
+        text-align: center;
+        padding: 170px 20px;
+        color: white;
+        font-family: 'Playfair Display', serif;
+        height: 500px;
+      }
+      .navigation {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        justify-content: space-evenly;
+        padding: 10px;
+      }
+      li {
+        list-style: none;
+        padding: 10px;
+        color: white;
+        font-family: 'Oswald', sans-serif;
+      }
+      .navbar {
+        /* background-color: rgb(102, 40, 40); */
+        height: 60px;
+      }
+      h1 {
+        font-size: 4rem;
+      }
+      p {
+        padding: 80px 80px;
+        align-items: center;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <ul class="navigation">
+          <li class="item">Home</li>
+          <li class="item">About Us</li>
+          <li class="item">Services</li>
+          <li class="item">Contact Us</li>
+        </ul>
+      </nav>
+    </header>
+    <section>
+      <h1>Welcome to coding World</h1>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad voluptas
+        molestiae explicabo cupiditate voluptatibus reiciendis ipsam, at
+        corporis blanditiis, repudiandae provident omnis sint quis deleniti
+        aperiam autem consequatur porro eos eius! Dolor sint excepturi pariatur
+        cumque esse, animi porro magni fugiat non necessitatibus error.
+      </p>
+    </section>
+    <hr />
+  </body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="eng">
+  <head>
+    <meta charset="UTF-8S" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS grid Tutorial</title>
+  </head>
+
+  <style>
+    .container{
+      display: grid;
+      /* grid-template-columns: 300px 100px 100px; */
+      /* grid-template-columns: 300px 100px auto; */
+      /* grid-template-columns: 1fr 4fr 1fr; */
+      grid-template-columns: repeat(3,auto);
+      grid-gap: 15px;
+    }
+    .item{
+       height: 100px;
+      /* width: 100px;  */
+      background-color: tomato;
+      margin: 3px;
+      border: 2px solid yellow;
+    }
+  </style>
+  <body>
+    <!-- containeris a grid -->
+     <div class="container">
+          <!-- items are grid items -->
+        <div class="item">This is item1</div>
+        <div class="item">This is item2</div>
+        <div class="item">This is item3</div>
+        <div class="item">This is item4</div>
+        <div class="item">This is item5</div>
+        <div class="item">This is item6</div>
+        <div class="item">This is item7</div>
+        <div class="item">This is item8</div>
+        <div class="item">This is item9</div>
+        <div class="item">This is item10</div>
+        <div class="item">This is item11</div>
+        <div class="item">This is item12</div>
+        
+     </div>
+
+  </body>
+</html>

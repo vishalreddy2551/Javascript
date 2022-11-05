@@ -1,0 +1,50 @@
+<DOCTYPE html>
+  <html>
+    <head>
+      <title>javascript date object methods</title>
+      <style>
+        body {
+          text-align: center;
+        }
+      </style>
+    </head>
+    <body>
+      <script>
+        document.writeln(
+          "javascript date object method using getDate() " + "<br>"
+        );
+        var d1 = new Date();
+        document.writeln(d1.getDate());
+        document.writeln(
+          "<br>" + "javascript date object method using :getDay()"
+        );
+        document.writeln("<br>" + d1.getDay());
+        document.writeln(
+          "<br>" + "javascript date object method using :getFullYears()"
+        );
+
+        document.writeln("<br>" + d1.getFullYear());
+        document.writeln(
+          "<br>" + "javascript date object method using :getHours()"
+        );
+
+        document.writeln("<br>" + d1.getHours());
+        document.writeln(
+          "<br>" + "javascript date object method using :getMilliseconds()"
+        );
+
+        document.writeln("<br>" + d1.getMilliseconds());
+
+        var day = " ";
+        switch (d1.getDay) {
+            case 0:
+                day = "Thrusday";
+                break;
+        
+          
+        }
+        document.writeln(day);
+      </script>
+    </body>
+  </html>
+</DOCTYPE>

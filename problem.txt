@@ -1,0 +1,11 @@
+var testArray = new Array("dog", "dog", "cat", "buffalo", "wolf", "cat", "tiger", "cat");
+var newArray = compressArray(testArray);
+ 
+/*
+console: [
+	Object { value="dog", count=2}, 
+	Object { value="cat", count=3}, 
+	Object { value="buffalo", count=1}, 
+	Object { value="wolf", count=1}, 
+	Object { value="tiger", count=1}
+]

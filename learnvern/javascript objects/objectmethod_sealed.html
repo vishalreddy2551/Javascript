@@ -1,0 +1,32 @@
+<DOCTYPE html>
+    <html>
+      <head>
+        <title>javascript methods: sealed() and issealed()  </title>
+      </head>
+      <body>
+        <h1>creating methods in objects</h1>
+        <!-- we can change old values but cannot delete after seal() -->
+        <script>
+          const obj1 = {
+            name:"vishal",
+
+          }
+         
+          const obj2 = Object.seal(obj1);
+          obj1.name = "Sanjana";
+          obj2.name = "sanjay";
+          console.log(obj2.name);
+          console.log(obj1.name);//after changing values get got updated that means we can change values
+          delete obj2.name;//after deleting we still get name
+          console.log(obj2.name);
+        //   we have checked name from obj1 and obj2 
+
+        console.log(Object.isSealed(obj2));
+        console.log(Object.isSealed(obj1));
+
+      
+        
+        </script>
+      </body>
+    </html>
+  </DOCTYPE>

@@ -1,0 +1,26 @@
+<DOCTYPE html>
+    <html>
+      <head>
+        <title>Document Object:getElementById </title>
+        <style>
+          body {
+            text-align: center;
+          }
+        </style>
+      </head>
+      <body>
+        <script>
+           function showNumber(){
+            var number = document.getElementById("telephoneNumber").value;
+            alert("Your telephone number is:" +number)//getElementById returns the object
+           }
+        </script>
+        <form name="form1">
+            Enter Your telephoneNumber: <input type="text" id="telephoneNumber" >
+            <br><br>
+            <input type="button" value="show conatct number" onclick="showNumber()">
+        </form>
+
+      </body>
+    </html>
+  </DOCTYPE>

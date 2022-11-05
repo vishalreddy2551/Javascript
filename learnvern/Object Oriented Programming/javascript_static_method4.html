@@ -1,0 +1,38 @@
+<DOCTYPE html>
+    <html>
+      <head>
+        <title>javascript Static method</title>
+        <style>
+          body {
+            text-align: center;
+          }
+        </style>
+      </head>
+      <body>
+        <h3>javascript Static method: Example 5</h3>
+        <script>
+          //one class can be called using constructor
+          class Test {
+            /*static method*/
+            static display() {
+                return "static method is invoked again";
+            }
+             /*non-static method*/
+             show() {
+              document.writeln(Test.display() + "<br>");
+              return "non-static method is invoked again";
+            }
+          } 
+          var t=new Test();
+          t.show();
+          //  static method called by non-static method
+          
+          
+
+
+          
+        </script>
+      </body>
+    </html>
+  </DOCTYPE>
+  

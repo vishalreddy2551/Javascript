@@ -1,0 +1,47 @@
+<DOCTYPE html>
+    <html>
+      <head>
+        <title>example for  callback function </title>
+        <style>
+          body{
+              text-align: center;
+              font-size: 3rem;
+          }
+        </style>
+      </head>
+      <body>
+        <h1> callback function</h1>
+        <h1> Please wait while transaction in processing</h1>
+           <!-- <script>
+               function getdata(x,y,callback){
+                //callback is not a keyword it just hold the another function name
+               document.writeln("multiplication of x and y are "+ x*y +"<br>" +"<br>");
+                callback();
+            }
+            function showdata() {
+                document.writeln("this is the staement written through the callback function" + "<br>"+ "<br>");
+            }
+            function maindata(){
+                document.writeln("this is the staement written through the callback function")
+            }
+            getdata(10,20,showdata)
+            getdata(10,30,maindata)
+           </script>      -->
+
+
+           <script>
+             
+             function getdata(callback){
+                var name = prompt("Welcome to HDFC bank Enter your name");
+                var amt = prompt("Enter amount");
+                callback(name,amt)
+             }
+             function showdata(name,amt){
+                alert("hello" + "<br>" + name + + "<br>" + "your entered amount is" + "do you wanna proceed")
+             }
+             getdata(showdata);
+           </script>
+       
+      </body>
+    </html>
+  </DOCTYPE>

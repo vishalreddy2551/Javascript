@@ -1,0 +1,53 @@
+<DOCTYPE html>
+    <html>
+      <head>
+        <title>javascript Classes</title>
+        <style>
+          body {
+            text-align: center;
+          }
+        </style>
+      </head>
+      <body>
+        <h3>javascript Classes: Class expression</h3>
+        
+  
+        <script>
+            //declaring classes
+            var emp = class{
+        //initialize object
+              constructor(id,name){
+                this.id = id;
+                this.name = name;
+              }
+              details(){
+                document.writeln(this.id + " " + this.name + "<br>")
+              }
+           }
+           //redeclaration of objects 
+           var object1 = new emp(1,'hitesh');
+           object1.details();
+           var object2 = new emp(2,'sameer')
+           object2.details();
+
+              //Reddeclaring classes
+              var emp = class{
+        //RE initialize object
+              constructor(id,name){
+                this.id = id;
+                this.name = name;
+              }
+              details(){
+                document.writeln(this.id + " " + this.name + "<br>")
+              }
+           }
+           //redeclaration of objects 
+           var object3 = new emp(1,'hitesh');
+           object1.details();
+           var object4 = new emp(2,'sameer')
+           object2.details();
+        </script>
+        
+      </body>
+    </html>
+  </DOCTYPE>

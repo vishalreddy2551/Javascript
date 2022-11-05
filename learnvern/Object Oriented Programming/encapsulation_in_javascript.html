@@ -1,0 +1,66 @@
+<DOCTYPE html>
+    <html>
+      <head>
+        <title>Encapsulation in javascript </title>
+        <style>
+          body {
+            text-align: center;
+          }
+        </style>
+      </head>
+      <body>
+        <h3>Encapsulation in javascript: 1</h3>
+         <script>
+            //declaring classes
+           class Student{
+            constructor(){
+                var name ;
+                var marks;
+            }
+            getName(){
+                return this.name;
+            }
+            setName(name){
+                 this.name= name;
+            }
+            getMarks(){
+                return this.marks  ;
+            }
+            setMarks(marks){
+                this.marks= marks;
+            }
+           }
+           var stud = new Student();
+           stud.setName("joel");
+           stud.setMarks(20);
+           document.writeln(stud.getName() + "has secured" + stud.getMarks() + "marks");
+        </script>
+        <script>
+            class Employee{
+                constructor(){
+                    var name;
+                    var id;
+        
+                }
+                getname(){
+                    return name;
+                }
+                setname(name){
+                    this.name = name;
+                }
+                getid(){
+                    return name;
+                }
+                setid(id){
+                    this.id = id;
+                }
+            }
+            var emp = new Employee();
+            emp.setname("AG");
+            emp.setid(1);
+            document.writeln( "<br>"+ "MR." + emp.getname() + "your id is" +emp.getid())
+        </script>
+        
+      </body>
+    </html>
+  </DOCTYPE>   

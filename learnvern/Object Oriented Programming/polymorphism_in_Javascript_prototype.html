@@ -1,0 +1,34 @@
+<DOCTYPE html>
+    <html>
+      <head>
+        <title>javascript: Polymorphism</title>
+        <style>
+          body {
+            text-align: center;
+          }
+        </style>
+      </head>
+      <body>
+        <h3>Polymorphism in javascript: prototype approach</h3>
+        <script>
+          function A() {
+            
+            }
+          A.prototype.display = function(){//creating display method using prototype
+            return "A is invoked";
+          }
+          function B(){
+
+          }
+          B.prototype = Object.create(A.prototype);//creating object from function using create() keyword and creating B.prototype child of A
+          
+          var a = [new A(),new B()];
+          a.forEach(function(message)  {
+            document.writeln(message.display());
+          });
+          b.display();
+        </script>
+      </body>
+    </html>
+  </DOCTYPE>
+  

@@ -1,0 +1,44 @@
+<DOCTYPE html>
+  <html>
+    <head>
+      <title>javascript arrays example</title>
+      <style>
+        body {
+          text-align: center;
+        }
+      </style>
+    </head>
+    <body>
+      <h1>creating arays by litteral</h1>
+      <script>
+        var emp = ["vish", "vishal", "vishu"];
+        for (let i = 0; i < emp.length; i++) {
+          document.writeln(emp[i] + "<br>");
+        }
+        //or
+        for (value in emp) {
+          document.writeln(emp[i] + "<br>");
+        }
+      </script>
+      <h1>creating arays by new keyword</h1>
+      <script>
+        var newemp = new Array();
+        newemp[0] = "vish";
+        newemp[1] = "vish";
+        newemp[2] = "vish";
+        for (value of newemp) {
+          document.writeln(value + "<br>");
+        }
+      </script>
+       </script>
+       <h1>creating arays using constructor by using new keyword</h1>
+       <script>
+         var car = new Array("xuv","altroz","harrier");
+        //()---> this is constructor
+         for (value of car) {
+           document.writeln(value + "<br>");
+         }
+       </script>
+    </body>
+  </html>
+</DOCTYPE>

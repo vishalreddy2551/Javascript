@@ -1,0 +1,35 @@
+<DOCTYPE html>
+    <html>
+      <head>
+        <title>javascript arrays methods part 4</title>
+        <style>
+          body {
+            text-align: center;  
+          }
+        </style>
+      </head>
+      <body>
+        <script>
+           document.writeln("array method of()" + "<br>");
+          var array1 = ["vish", "vishu", "vishal"];
+          var array2 = ["sanjay", "p", "reddy"];
+          var array3 = [50, 70, 20];
+          document.writeln("array generated using of() :" + Array.of(5,10,50,20));//returns array of any parameters passed
+          document.writeln("<br>" + "array generated using pop() :" + array1.pop());//returns last element 
+          document.writeln("<br>" + "array generated using push() :" + array1.push("baby"));//adds element at last position 
+         document.writeln(array1);
+
+         document.writeln("<br>" + "array generated using reduce() :" + array2.reverse());
+         var a =  array3.reduce(function(accumulator,currentvalue){
+            return accumulator + currentvalue;
+         })
+         document.writeln("<br>" + "result after using reduce() :" + a);
+
+         document.writeln("<br>" + "array generated using some() :" + array3.some(x=>[x>20]));
+         //if any array value satisfies condition return true 
+         document.writeln("<br>" + "array generated using shift() :" + array3.shift());//removes and returns first element of array
+         document.writeln("<br>" + "array generated using slice() :" + array3.slice(0,1));
+        </script>
+      </body>
+    </html>
+  </DOCTYPE>

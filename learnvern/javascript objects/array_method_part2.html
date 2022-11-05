@@ -1,0 +1,49 @@
+<DOCTYPE html>
+  <html>
+    <head>
+      <title>javascript arrays methods part 2</title>
+      <style>
+        body {
+          text-align: center;  
+        }
+      </style>
+    </head>
+    <body>
+      <script>
+        
+        var array1 = ["vish", "vishu", "vishal"];
+        var array2 = ["sanjay", "p", "reddy"];
+        var array3 = ["50", "70", "20"];
+        var array4 = ["10", ["20", "30"]];
+        function check(value) {
+          return value > 30;
+        }
+        console.log("filling elements into an aray by using fill()");
+        console.log(array1.fill("Reddy"));//replacing array values by fill method
+        console.log(array2.fill("Reddy",2));// replacing array values by fill method from 2 to last position
+        console.log(" aray method from()");
+        var fromArray = Array.from("hello");//form converts string into array
+        console.log(fromArray);
+
+        console.log(" aray method filtre()");
+
+        var nums =[50,20,30,70];
+        function filtre(value) {
+          return value ==300000;
+        }
+        console.log(nums.filter(check));
+
+        console.log(" aray method find()");
+        console.log(nums.find(x=>[x==20]));//return first value which satisfying the specified condition
+
+        console.log(" aray method findindex()");
+        console.log(nums.findIndex(x=>[x<100]));
+
+        console.log(" aray method foreach()");
+        console.log(nums.forEach(function(x){
+          console.log(x)
+        }));
+      </script>
+    </body>
+  </html>
+</DOCTYPE>

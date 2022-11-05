@@ -1,0 +1,48 @@
+<DOCTYPE html>
+    <html>
+      <head>
+        <title>Assignemnt 8</title>
+        <style>
+          body {
+            text-align: center;
+          }
+        </style>
+      </head>
+      <body>
+        <h3>Create a class named Employee and create two instances of this class and re-declare the same class without any Error:</h3>
+        
+  
+        <script>
+            //declaring classes
+            var Employee = class {
+         //initialize object
+              constructor(id,name){
+                this.id = id;
+                this.name = name;
+              }
+            
+           };
+          var emp1 = new Employee(1,"Vishal");//first object
+          var emp2 = new Employee(2,"Reddy");//second object
+          document.writeln(emp1.name + emp1.id);
+          document.writeln("<br>" + emp2.name + emp2.id);
+
+            //Redeclaring classes
+            var Employee = class {
+         //initialize object
+              constructor(company,year){
+                this.company = company;
+                this.year = year;
+              }
+            
+           };
+           var emp3 = new Employee("Bajaj",2019);
+           var emp4 = new Employee("Bajaj",2015);
+           document.writeln("<br>" + emp3.company + emp3.year) ;
+           document.writeln("<br>" + emp4.company + emp4.year) ;
+        
+        </script>
+        
+      </body>
+    </html>
+  </DOCTYPE>

@@ -1,0 +1,23 @@
+1. var item = 'Cake'
+
+acke
+
+2.Hello World 
+{
+
+}
+
+12345654 - 
+
+3.Reverse of number
+4.Reverse of string
+5.Fibonnaci Series
+6.Unique [1,2,3,4,5,5,6,5];
+7.Anagram
+8.Palidrom
+9. Function constructor
+10. How to created Object
+11. Write on design pattern
+12.SingleTon /Modular Pattern
+13.Self invoking
+14.Closures

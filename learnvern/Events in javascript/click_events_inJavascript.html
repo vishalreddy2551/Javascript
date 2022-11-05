@@ -1,0 +1,37 @@
+<DOCTYPE html>
+    <html>
+      <head>
+        <title>Javascript Click Events</title>
+        
+      </head>
+      <body>
+          <h1>Javascript Click Events: using onclick attribute in HTML</h1>
+          <button onclick="warning()">Click here</button>
+        
+          <script>
+          
+            function warning(){
+              alert("hey you please focus on your studies");
+            }
+          </script>
+           <h1>Javascript Click Events: using Javascript</h1>
+           <button id="mybutton">Click here</button>
+         
+           <script>
+           document.getElementById("mybutton").onclick= function warning(){
+            alert("hey you please focus on your studies");}
+         
+           </script>
+          <h1>Javascript Click Events: using addEventListener</h1>
+          <button id="mybutton">Click here</button>
+        
+          <script>
+          document.getElementById("mybutton").addEventListener("click",warning)
+            function warning(){
+              alert("hey you please focus on your studies");
+            }
+          </script>
+      </body>
+    </html>
+  </DOCTYPE>
+  

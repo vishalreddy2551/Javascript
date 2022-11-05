@@ -1,0 +1,11 @@
+//Get an array of all names
+// Get an array of Objects with name and height properties
+//Get the total height of characters
+//Get characters with mass greather  than 100
+//Get all male characters
+//Sort the gender
+//Sort by name
+// Does every characters has mass more then 40?
+// Does every character has blue eye?
+//is there atlease one male characters // Array.some
+// is there at lease one character taller than 200?

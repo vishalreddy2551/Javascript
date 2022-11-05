@@ -1,0 +1,39 @@
+<DOCTYPE html>
+  <html>
+    <head>
+      <title>example for implicit binding function method-1</title>
+      <style>
+        body{
+            text-align: center;
+            font-size: 3rem;
+        }
+      </style>
+    </head>
+    <body>
+      <script>
+        var book = {
+          title: "some book",
+          printtitle: function () { 
+            document.write(this.title);
+          },
+
+          nestedBook: {
+            title: "this is new book",
+            printtitle: function () {
+              document.write(this.title);
+            },
+          },
+          mybooks: {
+            title:"ikigai,5am club,think like a monk",
+            printtitle: function(){
+                document.write(this.title);
+            }
+          }
+        };
+        book.printtitle();
+        book.nestedBook.printtitle()
+        book.mybooks.printtitle()
+      </script>
+    </body>
+  </html>
+</DOCTYPE>

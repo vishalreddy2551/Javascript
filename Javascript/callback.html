@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <h2>Callback function examples</h2>
+
+    <script>
+        function greeting (name){
+            alert("hell, $(name)");
+        }
+
+        function processUserInput(callback){
+            const name = prompt("Enter your name");
+            callback(name);
+        }
+        processUserInput(greeting);
+    </script>
+  </body>
+</html>

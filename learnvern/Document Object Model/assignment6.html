@@ -1,0 +1,30 @@
+<DOCTYPE html>
+    <html>
+      <head>
+        <title>Document Object:Assignment 6 </title>
+        <style>
+          body {
+            text-align: center;
+          }
+        </style>
+      </head>
+      <body>
+        <h3>Question:3</h3>
+        male : <input type="radio" name="Gender" value="male">
+        female : <input type="radio" name="Gender" value="female">
+        other : <input type="radio" name="Gender" value="other">
+        <input type="button" value="click here!" onclick="showGender()">
+        <script>
+          function showGender(){
+            var x = document.getElementsByName('Gender');
+             alert(x[0].value);
+             alert(x.length);
+          }
+          
+          
+        </script>
+       
+
+      </body>
+    </html>
+  </DOCTYPE>

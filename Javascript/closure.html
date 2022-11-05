@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>closure examples</title>
+    <style>
+      body {
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Example on closures 1</h1>
+
+    <script>
+      function outer() {
+        let x = 5;
+        function inner() {
+          let y = 10;
+          return x * y;
+        }
+        document.write(inner());
+      }
+      outer();
+    </script>
+    <h1>Example on closures 2</h1>
+    <p>Assigning outer function to a var</p>
+    <script>
+      function outer() {
+        let x = 10;
+        let y = 15;
+        function inner() {
+          z = 15;
+          return x * y + z;
+        }
+        document.write(inner());
+      }
+      var add = outer();
+      add();
+    </script>
+    <h1>Example on closures 3</h1>
+    <p>using const to declare</p>
+
+    <script>
+      function outer() {
+        const name = "Vishal";
+        function inner() {
+          const surname = "Reddy";
+          const fullname = name + surname;
+          document.write(fullname);
+        }
+        inner();
+      }
+      const myfun = outer();
+      myfun();
+    </script>
+    <h1>Example on closures 4</h1>
+    <p>using javascript currying in closures</p>
+
+    <script>
+      function makesub(x) {
+        return function (y) {
+            return x - y;
+        };
+      }
+      const sub10 = makesub(15);
+      const sub12 = makesub(20);
+
+      //sub10 and sub 12 are both closures
+
+      document.write(sub10(5));
+      document.write(sub12(5));
+    </script>
+  </body>
+</html>

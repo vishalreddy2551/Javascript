@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="eng">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=7" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Login</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@600&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+        margin: 0px;
+        padding: 0px;
+      }
+      body {
+        background-color: slateblue;
+      }
+      .form1 {
+        width: 500px;
+        height: 400px;
+        display: flex;
+        text-align: center;
+        flex-direction: column;
+        justify-content: center;
+        justify-items: center;
+        margin: auto;
+        margin-top: 150px;
+        background-color: white;
+        color:black;
+        font-family: 'Oswald', sans-serif;
+      }
+      form {
+        text-align: left;
+        font-size: 1.5rem;
+        padding-left: 50px;
+      }
+      h1 {
+        padding-bottom: 60px;
+        font-family: "Oswald", sans-serif;
+        font-size: 3rem;
+      }
+      input {
+        margin-bottom: 20px;
+        width: 400px;
+        height: 30px;
+        border-radius: 5px;
+        
+      }
+      #button {
+        
+        background-color: slateblue;
+      }
+    </style>
+  </head>
+  <body>
+ 
+    <div
+      class="form1"
+      name="myform"
+      method="post"
+      onsubmit="return validateform()"
+    >
+      <h1>Login</h1>
+      <form>
+        <h5>Username:</h5>
+        <input type="text" name="username" /><span id="invalidusername" ></span
+        ><br />
+        <h5>Password:</h5>
+        <input type="password" name="password" /><span
+          id="invalidpassword"
+        ></span
+        ><br />
+        <input  id = "button" type="submit" name="submit" />
+      </form>
+    </div>
+    <script>
+        function validateform() {
+          var Username = document.myform.username.value;
+          var Password = document.myform.password.value;
+    
+          if (Username == null || Username == "") {
+            document.getElementById("invalidusername").innerHTML =
+              "Please Enter valid username";
+            return false;
+          } else {
+            return true;
+          }
+          if (Password.length > 6 && Password.length < 16) {
+            document.getElementById("invalidpassword").innerHTML =
+              "Your password length should be atleast 6 and maximum of 16";
+            //   alert ("invalid password");
+            return false;
+          } else {
+            return true;
+          }
+        }
+        
+      </script>
+  </body>
+
+</html>

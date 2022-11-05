@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="eng">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-compatible" content="ie=edge" />
+    <title> Using Media Quries using CSS grid</title>
+  </head>
+  <style>
+    .container {
+      display: grid;
+      grid-gap: 5px;
+      /* grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); */
+      grid-template-areas:
+        "navbar navbar navbar navbar"
+        "section section section aside"
+        "footer footer footer footer";
+    }
+    .box {
+      background-color: blueviolet;
+      border: 2px solid red;
+      padding: 15px;
+    }
+    #navbar {
+      grid-area: navbar; 
+    }
+    #section {
+      grid-area: section;
+    }
+    #aside {
+      grid-area: aside;
+    }
+    #footer {
+      grid-area: footer;
+    }
+    @media (min-width: 300px) and (max-width: 500px){
+        body{
+            background-color: aqua;
+        }
+    }
+    
+  </style>
+  <body>
+    <div class="container">
+      <div id="navbar" class="box">Home About Services Contact-Us</div>
+      <div id="section" class="box">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus
+        veniam nesciunt laborum quis incidunt tempore facilis repellat ex
+        expedita architecto? Quidem assumenda quibusdam accusantium vitae
+        molestias reprehenderit fugit aspernatur fugiat, laudantium quia?Lorem
+        ipsum dolor, sit amet consectetur adipisicing elit. Nostrum, saepe
+        corporis numquam dignissimos porro voluptates magnam placeat? Eius est
+        quod vel eveniet necessitatibus esse fugiat ullam facere quas explicabo
+        dolor sequi tempora laborum asperiores delectus blanditiis modi nihil
+        perferendis, veritatis dignissimos rem! Ipsa porro facilis facere fuga
+        aperiam nulla, nesciunt quis nisi fugit necessitatibus explicabo id
+        maxime, odit ad dolorum? Ratione, quidem? Impedit, velit, nulla eligendi
+        ut recusandae dolore dolor consectetur quibusdam, quae numquam
+        reiciendis officiis eveniet repellat debitis! Laboriosam.
+      </div>
+      <div id="aside" class="box">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsam tempora
+        mollitia adipisci, architecto consectetur veritatis ratione sunt, maxime
+        atque repellendus aspernatur autem Lorem ipsum dolor sit amet
+        consectetur adipisicing elit. Repudiandae, aliquam vitae dolor nam
+        dolores quaerat corporis eligendi dignissimos est aperiam hic. Ipsa eum
+        illo animi alias vitae corrupti. Quae nam ullam harum repellat, iusto
+        corporis nostrum esse hic sit fugiat. Culpa voluptatum aut laudantium
+        itaque harum, repellat dolores cum inventore..
+      </div>
+      <div id="footer" class="box">
+       Copyright VishalReddy@2022.
+      </div>
+        <!-- <div class="box">Item-1</div>
+        <div class="box">Item-1</div>
+        <div class="box">Item-1</div>
+        <div class="box">Item-1</div>
+        <div class="box">Item-1</div>
+        <div class="box">Item-1</div>
+        <div class="box">Item-1</div>
+        <div class="box">Item-1</div>
+        <div class="box">Item-1</div>
+        <div class="box">Item-1</div>
+        <div class="box">Item-1</div>
+        <div class="box">Item-1</div>
+        <div class="box">Item-1</div>
+        <div class="box">Item-1</div>  
+        <div class="box">Item-1</div> -->
+    </div>
+  </body>
+</html>

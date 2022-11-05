@@ -1,0 +1,30 @@
+<DOCTYPE html>
+    <html>
+      <head>
+        <title>javascript Prototype</title>
+        <style>
+          body {
+            text-align: center;
+          }
+        </style>
+      </head>
+      <body>
+        <h3>javascript Prototype: To access any property of object without creating any object Prototype is used </h3>
+        <script>
+            //To add method/function(fullname)  by usig prototype
+           function Employee(firstname,lastname){
+              this.firstname = firstname;
+              this.lastname = lastname;
+           } 
+           Employee.prototype.fullname = function(){ //we have added fullname method/function  by usig prototype
+            return this.firstname + this.lastname;
+           }
+           var emp1 = new Employee('rahul','vishal');
+           var emp2 = new Employee('rahul','vishal');
+           document.writeln(emp1.fullname() )
+           document.writeln("<br>" + emp2.fullname() )
+        </script>
+        
+      </body>
+    </html>
+  </DOCTYPE>

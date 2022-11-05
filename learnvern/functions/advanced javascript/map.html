@@ -1,0 +1,65 @@
+<DOCTYPE html>
+  <html>
+    <head>
+      <title>example for map set method</title>
+      <style>
+        body {
+          text-align: center;
+          font-size: 3rem;
+        }
+      </style>
+    </head>
+    <body>
+      <h1>map function</h1>
+      <script>
+        var m = new Map();
+
+        m.set(1, "vishalreddy");
+        m.set(2, "sanjayreddy");
+        m.set(3, "akshatareddy");
+        m.set(4, "sanjanareddy");
+  
+        //using get method to print specific key and value pair
+
+        //  document.writeln("values :" + m.get(1) + "<br>");
+        //  document.writeln("values :" + m.get(2) + "<br>");
+        //  document.writeln("values :" + m.get(3) + "<br>");
+        //  document.writeln("values :" + m.get(4) + "<br>");
+
+       //using for each value to print each key and value pair
+
+        // document.writeln("Map values are : <br>");
+        // m.forEach(function (value) {
+        //   document.writeln(value);
+        // });
+
+        //using clear to remove all the elements
+
+        // document.writeln("size of map before clear()" + m.size + "<br>")
+        // m.clear()
+        // document.writeln("size of map after clear()" + m.size)
+
+        
+        //using delete to remove specified elements
+         
+
+        // document.writeln("size of map before deleting vishalreddy" + m.size + "<br>");
+        // m.delete(1);
+        // document.writeln("size of map after deleting vishalreddy" + m.size + "<br>");
+
+         //using entries to  to covert objects into iterator
+
+        //  var iterator = m.entries();
+        //  for (let i = 0; i < m.size; i++) {
+        //     document.writeln(iterator.next().value + "<br>")
+            
+        //  }
+
+        //using has to  check if value exist in map
+        
+        document.writeln("to check  value at 2 exist in map 'm' :" + m.has(2) + "<br>")
+        document.writeln("to check  value at 25  exist in map 'm' :" + m.has(25) + "<br>")
+      </script>
+    </body>
+  </html>
+</DOCTYPE>

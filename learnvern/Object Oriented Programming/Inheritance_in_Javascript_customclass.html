@@ -1,0 +1,34 @@
+<DOCTYPE html>
+    <html>
+      <head>
+        <title>Inheritance in javascript </title>
+        <style>
+          body {
+            text-align: center;
+          }
+        </style>
+      </head>
+      <body>
+        <h3>Inheritance in javascript: custom class</h3>
+         <script>
+         class Bike {
+          constructor(){
+            this.company = "Bajaj";
+          }
+         }
+         class Vechile extends Bike{//Vechile is child clas of Bike; in this way Vechile class get all the properties of bike class by inheritance
+            constructor(name,cc){
+                super();
+                this.name = name;
+                this.cc = cc;
+            }
+         }
+         var v = new Vechile("pulsar","180F");
+         document.writeln(v.company  +"-"+  v.name +"-"+ v.cc);
+         var v1 = new Vechile("Platina","100");
+         document.writeln("<br>" + v1.company  +"-"+  v1.name +"-"+ v1.cc);
+        </script>
+        
+      </body>
+    </html>
+  </DOCTYPE>

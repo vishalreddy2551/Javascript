@@ -1,0 +1,31 @@
+<DOCTYPE html>
+  <html>
+    <head>
+      <title>javascript date object</title>
+      <style>
+        body {
+          text-align: center;
+        }
+      </style>
+    </head>
+    <body>
+      <script>
+        document.writeln("javascript date object using Date() " + "<br>");
+        var d1 = new Date();
+        document.writeln(d1);
+        document.writeln(
+          "<br>" +
+            "javascript date object using :Date(year,month,day,hours,minutes,seconds)"
+        );
+        var d2 = new Date(2018, 11, 1, 12, 56, 5, 50);
+        document.writeln("<br>" + d2);
+        document.writeln(
+          "<br>" + "javascript date object using :Date(milliseconds):"
+        );
+        var d3 = new Date(0);
+        document.writeln("<br>" + d3);
+
+      </script>
+    </body>
+  </html>
+</DOCTYPE>

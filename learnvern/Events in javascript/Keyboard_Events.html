@@ -1,0 +1,33 @@
+<DOCTYPE html>
+    <html>
+      <head>
+        <title>Events in Javascript:Mouse events</title>
+        <style>
+         .mouseover{
+          width: 100px;
+          height: 100px;
+          background-color: cyan;
+          margin: 10px;
+         }
+        </style>
+      </head>
+      <body>
+          <h1>keyboard Events: onkeydown,onkeyup</h1>
+          
+          <div class="mouseover" onkeydown="onKeydown" onkeyup="onKeyup">
+            <!-- keyboardevent does not fire on div it will only work for inputs -->
+          <input type="text" value="keyboard events" onkeydown="onKeydown()" onkeyup="onKeyup()">
+          </div>
+          <script>
+              function onKeydown(){
+                  document.body.style.background = 'yellow';
+              }
+              function onKeyup(){
+                  document.body.style.background = 'white';
+              }
+             
+          </script>
+      </body>
+    </html>
+  </DOCTYPE>
+  

@@ -1,0 +1,39 @@
+<DOCTYPE html>
+    <html>
+      <head>
+        <title>javascript E-mail validation</title>
+        <style>
+          body {
+            text-align: center;
+          }
+          
+        </style>
+      </head>
+      <body>
+        <h3>email validation using javascript</h3>
+        <h4>
+          Question:Validate the email. it must be E-mail
+        </h4>
+  
+        <script>
+          function validateemail() {
+            var email = document.myform.email.value;
+            var atposition = email.indexOf("@");
+            var dotposition = email.lastIndexOf(".");
+            if (atposition<1 || dotposition<atposition+2 || dotposition+2>=email.length  ) {
+               alert("email is not correct") 
+              
+            }else{
+              return true;
+            }
+          }
+        </script>
+        <form name="myform" method="post" onsubmit="return validateemail()">
+         
+          E-mail: <input type="text" name="email"><br><br >
+
+          <input type="submit" value="Submit" >
+        </form>
+      </body>
+    </html>
+  </DOCTYPE>

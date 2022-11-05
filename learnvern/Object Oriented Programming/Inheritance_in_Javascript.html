@@ -1,0 +1,25 @@
+<DOCTYPE html>
+    <html>
+      <head>
+        <title>Inheritance in javascript </title>
+        <style>
+          body {
+            text-align: center;
+          }
+        </style>
+      </head>
+      <body>
+        <h3>Inheritance in javascript: built-in class</h3>
+         <script>
+         class Moment extends Date{//moment is child of date
+          constructor(){
+            super();
+          }
+         }
+         var m = new Moment();
+         document.writeln("Today's date: " + m.getDate()  +"-"+ + m.getMonth() +"-"+ m.getFullYear());
+        </script>
+        
+      </body>
+    </html>
+  </DOCTYPE>

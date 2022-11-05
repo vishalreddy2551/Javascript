@@ -1,0 +1,30 @@
+<DOCTYPE html>
+    <html>
+      <head>
+        <title>addEventListners(): click</title>
+        
+      </head>
+      <body>
+          <h1>addEventListners(): adding multiple clicks</h1>
+          <button id="clickbutton">Click here</button>
+           <p id="line1"></p>
+           <p id="line2"></p>
+          <script>
+            document.getElementById("clickbutton").addEventListener("click",changeBackground);
+            document.getElementById("clickbutton").addEventListener("click",updateLine1);
+            document.getElementById("clickbutton").addEventListener("click",updateLine2);
+            //we have added multiple events on single button
+            function changeBackground(){
+                document.body.style.background = "yellow";
+            }
+            function updateLine1(){
+              document.getElementById("line2").innerHTML = "Hello";
+            }
+            function updateLine2(){
+              document.getElementById("line1").innerHTML = "Vishal Reddy";
+            }
+          </script>
+      </body>
+    </html>
+  </DOCTYPE>
+  

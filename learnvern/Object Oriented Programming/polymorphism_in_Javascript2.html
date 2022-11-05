@@ -1,0 +1,33 @@
+<DOCTYPE html>
+    <html>
+      <head>
+        <title>javascript: Polymorphism</title>
+        <style>
+          body {
+            text-align: center;
+          }
+        </style>
+      </head>
+      <body>
+        <h3>Polymorphism in javascript</h3>
+        <script>
+          class A {
+            display() {
+              document.writeln("A class's display method is invoked");
+            }
+          }
+          class B extends A {
+            display(){
+                document.writeln("B class's display method is invoked");
+            }
+          }//creating child B and accessing properties of A
+          var b = [new A(), new B()];
+           b.forEach(function(message)  {
+             message.display();
+           });
+         // same method(dispaly) behaves differently depending upon calling(by A or B) is called polymorphism
+        </script>
+      </body>
+    </html>
+  </DOCTYPE>
+  

@@ -1,0 +1,84 @@
+<DOCTYPE html>
+    <html>
+      <head>
+        <title>javascript form validation: Asssignment7</title>
+        <style>
+            body{
+                background-color: aqua;
+            }
+            h1{
+                text-align: center;
+            }
+          form {
+           
+            display: flex;
+            flex-direction: column;
+            margin: 10px;
+            width: 500px;
+           margin-left: 550px;
+            font-size: 1.5rem;
+          }
+          form.button{
+            width: 50px;
+          }
+        </style>
+      </head>
+      <body>
+        <h1>Form validation using javascript</h1>
+        <!-- <h4>
+          Question:Validate the inpu feilds. Both should not be null
+          1.first name and last name should be char only
+          2.E-mail validation
+          3. Telephone number should be number and equal to 10
+          4.password shoul be greater than 6 and less than 16
+          5. password==confirmpassword
+        </h4> -->
+  
+        <script>
+          function validateform() {
+            var name = document.myform.name.value;
+            var email = document.myform.email.value;
+            var atposition = email.indexOf("@");
+            var dotposition = email.lastIndexOf(".");
+            var Telephone = document.myform.Telephone.value;
+            var password = document.myform.password.value;
+            var confirmpassword = document.myform.confirmpassword.value;
+            if (isNaN(name) ) {
+              return true;
+            }else{
+              alert("Please enter char only");
+            }
+            if (atposition<1 || dotposition<atposition+2 || dotposition+2>=email.length  ) {
+               alert("email is not correct") 
+              
+            }else{
+              return true;
+            }
+            if (isNaN(Telephone)  ) {
+              alert("Please enter numbers only");
+              
+            }else if(Telephone.length<10){
+              return true;
+            }
+           
+            if (password == confirmpassword ) {
+              return true;
+            }else{
+              alert("Password is not matching");
+            }
+          }
+        </script>
+        <form name="myform" method="post" onsubmit="return validateform()">
+            <div class="name">
+                Name:<br> <input type="text" name="name" value="first name">  <input type="text" name="name" value="last name"> 
+            </div>
+         
+          Email:<br> <input type="text" name="email">
+          Phone: <br><input type="text" name="Telephone">
+          Password:<br><input type="password" name="password">
+          Confirm Password:<br><input type="password" name="confirmpassword"><br>
+          <input type="submit"  id = "button" value="Submit" >
+        </form>
+      </body>
+    </html>
+  </DOCTYPE>

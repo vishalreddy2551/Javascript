@@ -1,0 +1,87 @@
+                                               JAVASCRIPT(A Dynamic Lang)
+Function: 
+Note:After ES6 we have to use let instead of var because var can be updated and redeclared within its scope and let can be updated but not redeclared and it is block scoped.
+and const can neither updated nor redelared (const can be used where you know the values will be the same threoughout the programe).
+
+1) A javascript function is a block of javascrpit code, that can be executed when "called" for.
+for example, a function can be called when an event occurs, like when the user clicks a button.
+
+2) javascript can be wrapped in body or head section.  The function is invoked (called) when a button is clicked.
+
+3) It can also be provided externally i.e,myscript.js  <script src= "myscript.js"></script>. 
+Placing external javascript has some advantages: separates HTML and code, make easier to read, Catched javascript files can speed up page loads.
+
+4) Javascript can "display" data in different ways:
+   Writing into am HTML element, using innerHTML: document.getElementByID(id). ID attribute defines the HTML element and innerHTML property defines the HTML content
+   Writing into am HTML output using document.write(). Can be used for testing because it deletes all the existing html doc and overwrite it.
+   Writing into an alert box, using window.alert().
+   Writing into the browser console, using console.log.
+
+5) Javascript statments: javascript program is a list of programming statments
+   statments are composed of: Values,Operators, Expressions, Keywords, Comments.
+
+6) Javascript Keywords: used to identify the javascript action to be performed.
+   var         Declares a variable
+   let         Declares a block variable
+   const       Declares a block constant
+   if          Makes a block statments to be executed on condition
+   switch      Makes a block statments to be executed in different cases
+   for         Makes a block statments to be executed in a loop
+   function    Declares a function
+   return      exits a function
+   try         implements error handling to a block of statements
+
+7) Javascript values :
+   javascript syntax defines two types of values: Fixed values(Literals), Variable values(Variables)
+
+8) Javascript is case sensitive
+
+9) Variables: Variables are containers for storing data (storing data values).
+           4 ways to declare a javascript variables: using var, using let, using const, using nothing
+           let and const provide Block Scope in javascript.
+           variable declared with the var keyword can not have Block scope.
+           javascript const must be asigned to a value when they are declared : e.g, const pi=3.14
+when to use const: always declare a variable with const unless you know that value will change.
+Use const when you declare:
+                            a new object, a new Array, a new Function, a new RegExp 
+
+Data premitives and Non-Premitives(objects in JS): There are seven types of pimitives in JS: 1)N(Null)
+                                                                             2)N(Number)
+                                                                             3)S(symbol)
+                                                                             4)S(string)
+                                                                             5)B(boolean)
+                                                                             6)B(bigint)
+                                                                             7)U(undefined)
+Conditional Expression in JavaScript: Sometimes we might have to execute a block of code based off some condition. for example a promt might ask for age of the user and if he is under 18 display some message
+                              Three forms of if_else statment: 1) if statment 2)if-- else statment  3)if--else   if--else statment
+
+
+10) Loops: We use loops to perform repeated actions. e.g, If you assigned a task of printing numbers from 1 to 100, it will be very hectic to do it manually,
+ Loops helps us automate such tasks.
+ Types of loops in Javascript: 1)for loop 2)for in loop 3)for of loop 4)while loop 5)do-while loop 
+
+for loop: syntax is for(statment 1 ; statment 2 ; statment 3){code to be executed}
+              statment 1--->executed one time   statment 2-->condition base on which the loop runs(loop body is executed)
+              statment3-->executed everytime the loop body is executed.
+for loop-->loop a block of code no of times
+for in loops-->loops through the keys of an object
+for of object-->loops through the value of an object
+while loop-->loops a block of code based on condition
+do-while loop-->while loop varient which runs atleast once
+
+While loop
+syntax of while loop looks like this: while(condition){ code to be executed}
+Note: if the condition never becomes false, the loop will never end it might crash the runtime.
+do-while loop
+syntax : do{  code to be executed-->executed at least one time without checking its condition this is a main diff between d0-while and while loop}
+while(condition)
+                                                                           
+
+Functions in Javscript: Javascript function is a block of code designed to perform a perticular task.
+syntax: function myfunc(){
+code                  
+}   
+
+function myfunc(parameter1, parameter2){
+code                  
+} 

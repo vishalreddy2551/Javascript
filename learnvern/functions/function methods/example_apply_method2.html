@@ -1,0 +1,31 @@
+<DOCTYPE html>
+  <html>
+    <head>
+      <title>example for function apply() method-2 and joing two arrays</title>
+    </head>
+    <body>
+      <script>
+        var arr = [25, 30, 2, 5, 6];
+        var newarr = [55, 33, 24, 59, 6];
+        arr.push.apply(arr,newarr);
+        document.writeln("concatenated array is : ");
+        //   var max = Math.max.apply(this,arr,newarr);
+        //   var min = Math.min.apply(this,arr,newarr);
+        //   we are using inbuilt math function thats why we have not created any function
+        document.writeln("<h2>printing arr values using for of loops</h2>");
+        for (value of arr) {
+          document.writeln(value);
+        }
+        document.writeln("<h2>printing newarr values using for of loops</h2>"+ "<br>");
+        for (value of newarr) {
+          document.writeln(value);
+        }
+        document.writeln(
+          "<h2>Example to find max and min number using apply()</h2>"
+        );
+        // document.writeln("max number is :" + max + "<br>");
+        // document.writeln("min number is :" + min + "<br>");
+      </script>
+    </body>
+  </html>
+</DOCTYPE>

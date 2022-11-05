@@ -1,0 +1,40 @@
+<DOCTYPE html>
+    <html>
+      <head>
+        <title>javascript math object part1</title>
+        <style>
+          body {
+            text-align: center;
+          }
+        </style>
+      </head>
+      <body>
+        <script>
+          var num1 = 100; 
+          var num4 = 5;//integer value
+          var num2 = 100.5; //exponent value
+          var num2 = new Number(100); //number object
+          document.writeln("<h2>Javascript Number Methods</h2>");
+          document.writeln("<h3>Isfinite():</h3>" + Number.isFinite(num1));
+          document.writeln("<h3>Isfinite():</h3>" + Number.isFinite('g'));
+          document.writeln("<h3>is (0,10) a finite using Isfinite():</h3>" + Number.isFinite(0,10));
+          document.writeln("<h3>is (10,0) a finite using Isfinite():</h3>" + Number.isFinite(10,0));
+          document.writeln("<h3>isInteger():</h3>" + Number.isInteger(-2));
+          document.writeln("<h3> is infinity a integer using isInteger():</h3>" + Number.isInteger(Infinity));
+          document.writeln("<h3> is NaN a integer using isInteger():</h3>" + Number.isInteger(NaN));
+          document.writeln("<h3>convert '85' to number using parse float:</h3>" + Number.parseFloat("50"));//returns float data type
+          document.writeln("<h3>convert '85' to number using parse int:</h3>" + Number.parseInt("50"));//returns int data type
+          //if you pass NaN then it will return NaN(not a number)
+          document.writeln("<h3>convert 'Hello85' to number using parse int:</h3>" + Number.parseInt("Hello50"));//returns int data type
+          document.writeln("<h3> toExponential:</h3>" + num1.toExponential(2));//returns exponential form of 100 with base value 2
+          document.writeln("<h3> toExponential:</h3>" + num4.toExponential(3));//returns exponential form of 100 with base value 2
+          document.writeln("<h3> value of pi is:</h3>" + Math.PI);
+          document.writeln("<h3> toFixed():</h3>" + Math.PI.toFixed(2));//returns a string with exact numbers with only two numbers after decimal 
+          document.writeln("<h3> toFixed():</h3>" + num2.toFixed());//returns a string with exact numbers with 0 numbers after decimal 
+          document.writeln("<h3> value of pi in string using toprecision():</h3>" + Math.PI.toPrecision(3));//returns a string with exact numbers with total 3 numbers 
+          document.writeln("<h3> value of 4 in string using tostring():</h3>"  + num4.toString());
+        </script>
+      </body>
+    </html>
+  </DOCTYPE>
+  

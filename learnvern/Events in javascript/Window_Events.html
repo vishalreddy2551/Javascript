@@ -1,0 +1,23 @@
+<DOCTYPE html>
+  <html>
+    <head>
+      <title>Events in Javascript:Window events</title>
+    </head>
+    <body onload="onLoad()" onunload="onUnLoad()" onresize="onResize()">
+      <h1>Window Events:</h1>
+
+      <script>
+        function onLoad() {
+          alert("window is loaded");
+        }
+        function onUnLoad() {
+          alert("window is unloaded");
+        }
+        //will not fire because browser will be closed so we cannot see the output
+        function onResize() {
+          alert("window's size is changed ");
+        }
+      </script>
+    </body>
+  </html>
+</DOCTYPE>

@@ -1,0 +1,33 @@
+<DOCTYPE html>
+    <html>
+      <head>
+        <title>javascript methods: create()</title>
+      </head>
+      <body>
+        <h1>creating methods in objects</h1>
+        
+        <script>
+          function fruit() {
+            this.name = "grapes";
+          }
+          function fun() {
+            fruit.call(this);
+          }
+          fun.prototype = Object.create(fruit.prototype)
+           const app = new fun();
+           console.log(app);
+           
+        </script>
+        <script>
+            let obj = {
+                name : "the dude"
+            }
+            let obj2 = Object.create(obj,{});
+            console.log(obj2)
+            let obj3 = Object.create(obj2,{lastname:reddy});
+            console.log(obj3);
+
+        </script>
+      </body>
+    </html>
+  </DOCTYPE>

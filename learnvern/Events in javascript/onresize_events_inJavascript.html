@@ -1,0 +1,20 @@
+<DOCTYPE html>
+  <html>
+    <head>
+      <title>onresize Events in Javascript</title>
+    </head>
+    <body onresize="onResize()">
+      <h1>onresize Events: using HTML</h1>
+      <p id="p1"></p>
+      <script>
+        function onResize() {
+          document.getElementById("p1").innerHTML =
+            "Window width =" +
+            window.outerWidth +
+            "window height =" +
+            window.outerHeight;
+        };
+      </script>
+    </body>
+  </html>
+</DOCTYPE>

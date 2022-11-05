@@ -1,0 +1,25 @@
+<DOCTYPE html>
+  <html>
+    <head>
+      <title>javascript: Polymorphism</title>
+      <style>
+        body {
+          text-align: center;
+        }
+      </style>
+    </head>
+    <body>
+      <h3>Polymorphism in javascript</h3>
+      <script>
+        class A {
+          display() {
+            document.writeln("A class is invoked");
+          }
+        }
+        class B extends A {}//creating child B and accessing properties of A
+        var b = new B();
+        b.display();
+      </script>
+    </body>
+  </html>
+</DOCTYPE>

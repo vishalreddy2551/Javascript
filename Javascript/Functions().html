@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Example of call() -2</title>
+    <style>
+        *{
+            text-align: center;
+            /* background-color: black;
+            color: white; */
+        }
+    </style>
+</head>
+<body>
+    <script>
+        document.writeln('<h1>Example of call() -1</h1>')
+        function Emp(id, name){
+            this.id = id;
+            this.name = name;
+        }
+        function PermanentEmp(id,name){
+            Emp.call(this,id,name);
+        }
+        var pEmp1 = new PermanentEmp(1, 'Stiffen Cook');
+        var pEmp2 = new PermanentEmp(2, 'Justin Burger');
+        document.writeln(pEmp1.id + ' ' + pEmp1.name);
+        document.write('<br>');
+        document.writeln(pEmp2.id + ' ' + pEmp2.name);
+    </script>
+    <script>
+        document.writeln('<h1>Example of call() -2</h1>')
+        function Fruits(id, name){
+            this.id = id;
+            this.name = name;
+        }
+        function fruitsList(id,name){
+            Fruits.call(this,id,name);
+        }
+        var fruit = new fruitsList(1, 'Mango');
+        var frui = new fruitsList(2, 'Banan');
+        var fru = new fruitsList(3, 'Apple');
+        document.writeln(fruit.id + ' ' + fruit.name);
+        document.write('<br>');
+        document.writeln(frui.id + ' ' + frui.name);
+        document.write('<br>');
+        document.writeln(fru.id + ' ' + fru.name);
+    </script>
+    <script>
+        document.writeln('<h1>Example of call() -3</h1>')
+        function car(id, name){
+            this.id = id;
+            this.name = name;
+        }
+        function carList(id,name){
+            car.call(this,id,name);
+        }
+        var cars1 = new carList(1, 'Eartiga');
+        var cars2 = new carList(2, 'Scorpio');
+        document.writeln(cars1.id + ' ' + cars1.name);
+        document.write('<br>');
+        document.writeln(cars2.id + ' ' + cars2.name);
+    </script>
+    <script>
+        document.writeln('<h1>Example of Apply() -1</h1>')
+        var arr = [6,8,4,91,3];
+        for(value of arr){
+            document.writeln(value)
+        }
+        document.write('<h3>Example to find max. Power</h3>')
+        var max = Math.max.apply(this,arr);
+        document.writeln (max);
+        document.write('<h3>Example to find min. Power</h3>')
+        var min = Math.min.apply(this,arr);
+        document.writeln(min);
+    </script>
+    <script>
+        document.writeln('<h1>Example of Apply() -2</h1>')
+        document.write('<h2>Example of combine two Arrays</h2>')
+        document.writeln('<h3>First array values</h3>')
+        var arr1 = [1,2,3,4];
+        for(value of arr1){
+            document.writeln(value)
+        }
+        document.write('<h3>Second array values</h3>')
+        var arr2 = [5,6,7,8];
+        for(value of arr2){
+            document.writeln(value)
+        }
+        document.write('<h4>')
+        arr1.push(arr2)
+        document.writeln('<h4>By combining Array 1 & Array 2 we get</h4>')
+        document.writeln(arr1)
+    </script>
+    <script>
+        document.writeln('<h1>Example of Bind() -1</h1>')
+        var website = {
+            name: 'Shankar',
+            getName:function(){
+                return this.name;
+            }
+        }
+        document.write(website.getName());
+    </script>
+    <script>
+        document.writeln('<h1>Example of Bind() -2</h1>')
+        var website = {
+            name: 'Shankar',
+            getName:function(){
+                return this.name;
+            }
+        }
+        var website1 = {
+            name: 'Shankar',
+        }
+        var website2 = {
+            name: 'Vinayak',
+        }
+        var website3 = {
+            name: 'Rups',
+        }
+        var website4 = {
+            name: 'Rupali',
+        }
+        var unboundGetName = website.getName;
+        var boundGetName = unboundGetName.bind(website2);
+        document.write(boundGetName());
+    </script>
+    <script>
+        document.writeln('<h1>Example of toString() -1</h1>')
+        function add(num1,num2){
+            return num1+num2;
+        }
+        document.writeln(add.toString());
+    </script>
+    <script>
+        document.writeln('<h1>Example of toString() -2</h1>')
+        function add(num1,num2){
+            return num1+num2;
+        }
+        document.writeln(add(10,30).toString());//Value ko string mein convert kr deta he_ ye jo 40 aai he wo value/num nahi he wo eak string he, jo humne toString ke help se kiya.
+    </script>
+</body>
+</html>

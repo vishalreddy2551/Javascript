@@ -1,0 +1,42 @@
+<DOCTYPE html>
+    <html>
+      <head>
+        <title>javascript form validation</title>
+        <style>
+          body {
+            text-align: center;
+          }
+          #errorTelephone{
+            color: red;
+          }
+        </style>
+      </head>
+      <body>
+        <h3>Form validation using javascript</h3>
+        <h4>
+          Question:Validate the telephone number. it must be number
+        </h4>
+  
+        <script>
+          function validateform() {
+            var telephonenumber = document.myform.telephonenumber.value;
+            var confirmpassword = document.myform.confirmpassword.value;
+            if (isNaN(telephonenumber)  ) {
+                document.getElementById("errorTelephone").innerHTML = "Entered value is not a number";
+              return false;
+            }else{
+              return true;
+            }
+          }
+        </script>
+        <form name="myform" method="post" onsubmit="return validateform()">
+          Name: <input type="text" name="name"> <br><br>
+          TelephoneNumber: <input type="text" name="telephonenumber"><span id= "errorTelephone"></span><br><br>
+          Password:<input type="password" name="password"><br><br>
+          Confirm Password:<input type="password" name="confirmpassword"><br><br >
+
+          <input type="submit" value="Submit" >
+        </form>
+      </body>
+    </html>
+  </DOCTYPE>

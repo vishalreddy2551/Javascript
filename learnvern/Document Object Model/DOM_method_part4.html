@@ -1,0 +1,30 @@
+<DOCTYPE html>
+    <html>
+      <head>
+        <title>Document Object Method:getElementsByName()</title>
+        <style>
+          body {
+            text-align: center;
+          }
+        </style>
+      </head>
+      <body>
+        <form >
+            male:<input type="radio" name="Gender"  value="male"><br>
+            female: <input type="radio" name="Gender"  value="female"><br>
+            other:<input type="radio" name="Gender" value="other"><br>
+            <input type="button" value="show data" onclick="showElements()">
+        </form>
+       
+        <script>
+            function showElements(){
+                var x = document.getElementsByName('Gender');
+              alert(x[0].value);
+              alert(x.length);
+            }
+            
+          
+        </script>
+      </body>
+    </html>
+  </DOCTYPE>

@@ -1,0 +1,47 @@
+<DOCTYPE html>
+  <html>
+    <head>
+      <title>Javascript Click Events: Assignemnt 11</title>
+      <style>
+        #d1{
+         width: 100px;
+         height: 100px;
+         background-color: aqua;
+        }
+      </style>
+    </head>
+    <body onload="onLoad()" onresize="onResize()" >
+        <P id="p1"></P>
+      <h1>Assignemnt on Javascript events</h1>
+      <button onclick="warning()">Click here</button>
+     
+      <script>
+        function warning() {
+          alert("hey you please focus on your studies");
+        }
+      </script>
+      <script>
+        function onLoad() {
+          alert("hey you please focus on your studies");
+        }
+      </script>
+      <script>
+        function onResize() {
+          document.getElementById("p1").innerHTML = "Window screen height =" + window.outerHeight +"<br>" +"Window screen width =" + window.outerWidth;
+        }
+      </script>
+      
+       <div id="d1" ondblclick="onDblclick()" onmouseover="onMouseover()"></div> 
+       <script>
+        function onDblclick() {
+          document.getElementById("d1").innerHTML= "blue";
+        }
+        document.getElementById("d1").addEventListener("click",)
+        function onMouseover() {
+          document.body.style.color= "blue";
+        }
+        
+      </script>
+    </body>
+  </html>
+</DOCTYPE>

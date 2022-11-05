@@ -1,0 +1,56 @@
+<DOCTYPE html>
+  <html>
+    <head>
+      <title>javascript objects example</title>
+      <style>
+        body {
+          text-align: center;
+        }
+      </style>
+    </head>
+    <body>
+      <h1>creating object by litteral</h1>
+
+      <script>
+        let person = {
+          name: "Vishal reddy",
+          height: "176cm",
+          color: "dusky",
+          age: "25",
+        };
+        document.writeln("my name is " + person.name + "my height is" + person.height + "<br>");
+      </script>
+
+      <h1>creating object by using new keyword(instance of object)</h1>
+      <script>
+         
+       var emp = new object();
+       emp.id = 1;
+       emp.name = "Vishal reddy";
+       emp.salary = 120000;
+       document.writeln("Object details of person: ");
+
+       for(value in emp){
+        document.writeln(emp[value] + "<br>");
+       }
+       document.writeln(emp());
+      </script>
+      <h1>creating object by using new keyword(using object constructor)</h1>
+      <script>
+        function emp(id,name,salary) {
+          this.id = id;
+          this.name = name;
+          this.salary = salary;
+        }
+        var e = new employee(2,"pratik patel",12500);
+        for(value in e){
+          document.writeln(e[value]+" ");
+        }
+        
+
+      </script>
+       
+
+    </body>
+  </html>
+</DOCTYPE>

@@ -1,0 +1,18 @@
+<DOCTYPE html>
+  <html>
+    <head>
+      <title>onload Events in Javascript</title>
+    </head>
+    <body onload="onLoad()">
+      <h1>onload Events in Javascript:using document.load</h1>
+      <p id="bg">hey there please focus on your studies</p>
+      <script>
+        document.onLoad = function onLoad() {
+          document.getElementById("bg").style.backgroundColor = "red";
+          document.getElementById("bg").style.width = "300px";
+          document.getElementById("bg").style.height = "500px";
+        };
+      </script>
+    </body>
+  </html>
+</DOCTYPE>

@@ -1,0 +1,42 @@
+<DOCTYPE html>
+  <html>
+    <head>
+      <title>Events in Javascript:Mouse events</title>
+      <style>
+       .mouseover{
+        width: 100px;
+        height: 100px;
+        background-color: cyan;
+        margin: 10px;
+       }
+      </style>
+    </head>
+    <body>
+        <h1>Mouse Events: onclick</h1>
+        <input type="button" value="change background" name="click here" onclick="changeBackground()">
+        <div class="mouseover" onmouseover="onMouseover()" onmouseout="onMouseout()" onmousedown="onMousedown()" onmouseup="onMouseup()" onmousemove="onMousemove()">
+
+        </div>
+        <script>
+            function changeBackground(){
+                document.body.style.background = 'yellow';
+            }
+            function onMouseover(){
+                document.body.style.background = 'green';
+            }
+            function onMouseout(){
+                document.body.style.background = 'white';
+            }
+            function onMousedown(){
+                document.body.style.background = 'purple';
+            }
+            function onMouseup(){
+                document.body.style.background = 'red';
+            }
+            function onMousemove(){
+                alert("this mousemove event");
+            }
+        </script>
+    </body>
+  </html>
+</DOCTYPE>

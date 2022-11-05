@@ -1,0 +1,35 @@
+<DOCTYPE html>
+    <html>
+      <head>
+        <title>javascript Classes</title>
+        <style>
+          body {
+            text-align: center;
+          }
+        </style>
+      </head>
+      <body>
+        <h3>javascript Classes: Declare a class</h3>
+        
+  
+        <script>
+            //declaring classes
+           class Emp{
+        //initialize object
+              constructor(id,name){
+                this.id = id;
+                this.name = name;
+              }
+              details(){
+                document.writeln(this.id + " " + this.name + "<br>")
+              }
+           }
+           var object1 = new Emp(1,'hitesh');
+           object1.details();
+           var object2 = new Emp(2,'sameer')
+           object2.details();
+        </script>
+        
+      </body>
+    </html>
+  </DOCTYPE>

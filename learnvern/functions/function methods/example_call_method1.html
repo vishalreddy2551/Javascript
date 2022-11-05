@@ -1,0 +1,33 @@
+<DOCTYPE html>
+    <html>
+      <head>
+        <title>example for function method-1 </title>
+      </head>
+      <body>
+        <script>
+          function Emp(id, name){
+          this.id = id;
+          this.name = name;
+          }
+            function Permanentemp(id,name){
+              Emp.call(this,id,name)
+            }
+            function Temperaryemp(id,name){
+              Emp.call(this,id,name)
+            }
+            var tEmp = new Temperaryemp(1,"Vishal Reddy");
+            var pEmp = new Permanentemp(1,"Vishal Reddy");
+            document.writeln(pEmp.id + pEmp.name);
+            document.writeln("<br>");
+            document.writeln(tEmp.id + tEmp.name);
+
+
+
+        //     document.writeln(new Permanentemp(1,"Vishal Reddy").id)
+        //    document.writeln(new Temperaryemp(1,"Vishal Reddy").name)
+        //    new object creation
+        </script>
+        
+      </body>
+    </html>
+  </DOCTYPE>

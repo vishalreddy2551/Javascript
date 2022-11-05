@@ -1,0 +1,28 @@
+<DOCTYPE html>
+  <html>
+    <head>
+      <title>javascript Static method</title>
+      <style>
+        body {
+          text-align: center;
+        }
+      </style>
+    </head>
+    <body>
+      <h3>javascript Static method: Example 3</h3>
+      <script>
+        //one class can contain many static methods
+        class Test {
+          static display() {
+            return "static method is invoked";
+          }
+          static display() {
+            return "static method is invoked again";
+          }
+        } 
+        document.writeln(Test.display());
+        //class which conatain more than one static method with same name last method will be called
+      </script>
+    </body>
+  </html>
+</DOCTYPE>

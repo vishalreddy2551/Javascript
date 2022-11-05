@@ -1,0 +1,35 @@
+<DOCTYPE html>
+  <html>
+    <head>
+      <title>javascript arrays methods part 5</title>
+      <style>
+        body {
+          text-align: center;
+        }
+      </style>
+    </head>
+    <body>
+      <script>
+        document.writeln("array method sort()" + "<br>");
+        var array1 = ["vish", "vishu", "vishal"];
+        var array2 = ["sanjay", "p", "reddy"];
+        var array3 = [50, 70, 20];
+        document.writeln("array generated using sort() :" + array2.sort()); //sorts(arranges) alphabetically
+        document.writeln("<br>" + "array method splice()" + "<br>");
+        document.writeln(
+          "array generated using splice() :" + array2.splice(1,0,"BABY")
+        ); //
+        document.writeln("<br>" + "array method tolocalestring()" + "<br>");
+        document.writeln(
+          "array generated using tolocalestring() :" + array2.toLocaleString()
+        ); //
+        document.writeln("<br>" + "array method upshift()" + "<br>");
+        var res = array3.unshift(90);
+        document.writeln(
+          "array generated using upshift() :" + res);
+          document.writeln(res);
+         
+      </script>
+    </body>
+  </html>
+</DOCTYPE>

@@ -1,0 +1,38 @@
+<DOCTYPE html>
+    <html>
+      <head>
+        <title>Assignemnt 8</title>
+        <style>
+          body {
+            text-align: center;
+          }
+        </style>
+      </head>
+      <body>
+        <h3>
+          create javascript function named employee and add method to this function to return the firstname and lastname using prototype
+        </h3>
+  
+        <script>
+          //function
+          function Employee(firstname,lastname) {
+            this.firstname = firstname;
+            this.lastname = lastname;
+            
+          }
+           //creating method using prototype method
+          Employee.prototype.fullname = function(){
+            return this.firstname + this.lastname;
+          }
+          var emp1 = new Employee("Vishal","Reddy");
+          var emp2 = new Employee("Sanjay","Reddy");
+          document.writeln(emp1.fullname() + "<br>" + emp2.fullname());
+  
+        
+        
+         
+        </script>
+      </body>
+    </html>
+  </DOCTYPE>
+  

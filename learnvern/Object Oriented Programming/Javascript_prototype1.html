@@ -1,0 +1,30 @@
+<DOCTYPE html>
+    <html>
+      <head>
+        <title>javascript Prototype</title>
+        <style>
+          body {
+            text-align: center;
+          }
+        </style>
+      </head>
+      <body>
+        <h3>javascript Prototype: To access any property of object without creating any object Prototype is used </h3>
+        <script>
+            //To add property(fullname)  by usig prototype
+            //problem: suppose if we forgot to declare company property we acn add it dynamically during runtime by using proptotype
+           function Employee(firstname,lastname){
+              this.firstname = firstname;
+              this.lastname = lastname;
+           } 
+           Employee.prototype.company = "L&T" //we have added company property by using prototype
+          
+           var emp1 = new Employee('rahul','vishal');
+           var emp2 = new Employee('rahul','vishal');
+           document.writeln("This employee " + emp1.firstname + emp1.lastname + "belongs to "+ emp1.company)
+           document.writeln("<br>" + "This employee " + emp2.firstname + " " + emp2.lastname + " "  +   "belongs to " + " "  + emp2.company )
+        </script>
+        
+      </body>
+    </html>
+  </DOCTYPE>

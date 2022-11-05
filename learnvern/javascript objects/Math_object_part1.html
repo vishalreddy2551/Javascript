@@ -1,0 +1,41 @@
+<DOCTYPE html>
+    <html>
+      <head>
+        <title>javascript math object part1 </title>
+        <style>
+          body {
+            text-align: center;
+          }
+        </style>
+      </head>
+      <body>
+        <script>
+          document.writeln("Math abs() Method" + "<br>");
+          var num1 = -4;
+          var num2 = [-4,4,1,7,8,5,9];
+          
+          function otp(){
+             return Math.random()*1000000;
+          }
+         document.writeln("<br>" +"<br>" + "abs() of num1:"   + Math.abs(num1));//returns the positive integer if -ve or +ve number passed
+         document.writeln("<br>" +"<br>" + "ceil() number of the 5.6:"   + Math.ceil(5.6));//returns the largest integer roundoff value
+         document.writeln("<br>" +"<br>" + "ceil() number of the -5.6 :"   + Math.ceil(-5.6));//returns the largest integer roundoff value
+         document.writeln("<br>" +"<br>" + " floor() number of the :"   + Math.floor(5.5));//returns the smallest integer roundoff value
+         document.writeln("<br>" +"<br>" + " floor() number of the :"   + Math.floor(-5.5));//returns the smallest integer roundoff value
+         document.writeln("<br>" + "<br>" + "exp() number of the :"   + Math.exp(1));//returns exponential value of 1
+         document.writeln("<br>" +"<br>" + "log() number of the :"   + Math.log(2));
+         document.writeln("<br>" +"<br>" + "max() number of the :"   + Math.max(1,2,5,7,8,9,5));
+         document.writeln("<br>" +"<br>" + "min() number of the :"   + Math.min(1,2,5,7,8,9,5,-2));
+         document.writeln("<br>" +"<br>" + "pow() number of the :"   + Math.pow(8,2));
+         document.writeln("<br>" +"<br>" + "random() number of the :"   + Math.random() + otp);  
+         document.writeln("<br>" +"<br>" + "round() number of the :"   + Math.round(5.6)); //returns closest integer used in creating capta and otp code creation
+         document.writeln("<br>" +"<br>" + "round() number of the :"   + Math.round(-5.6)); //returns closest integer
+         document.writeln("<br>" +"<br>" + "sign() number of the :"   + Math.sign(6)); //returns 1 for positive value and -1 for -ve value
+         document.writeln("<br>" +"<br>" + "sqrt() number of the :"   + Math.sqrt(36)); //returns square root
+         document.writeln("<br>" +"<br>" + "cbrt() number of the :"   + Math.cbrt(36)); //returns cube root
+         document.writeln("<br>" +"<br>" + "trunc() number of the :"   + Math.trunc(8.56)); 
+         document.writeln("<br>" +"<br>" + "trunc() number of the :"   + Math.trunc(0.89)); 
+        </script>
+      </body>
+    </html>
+  </DOCTYPE>

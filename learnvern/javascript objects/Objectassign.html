@@ -1,0 +1,31 @@
+<DOCTYPE html>
+    <html>
+      <head>
+        <title>javascript methods: Assign()</title>
+      </head>
+      <body>
+        <h1>creating methods in objects</h1>
+        <!-- copying properties from existing properties and also assign new properties and create new object -->
+        <script>
+            const object1 = {
+                a:1,
+                b:2,
+                c:3
+            }
+            const object2 = {
+                 d: 1,
+                 e:2,
+                 f:3   
+            } 
+            const object3 = Object.assign({c:5,d:7},object1);
+            const object4 = Object.assign({g:5,h:10},object2)
+            // document.writeln(object3);
+            // document.writeln(object1);
+            console.log(object1,object3);
+            console.log(object4)
+
+            
+        </script>
+      </body>
+    </html>
+  </DOCTYPE>

@@ -1,0 +1,42 @@
+<DOCTYPE html>
+    <html>
+      <head>
+        <title>Assignemnt 9</title>
+        <style>
+          body {
+            text-align: center;
+          }
+        </style>
+      </head>
+      <body>
+           <h3>
+             write a javascript program to achieve Encapsulation in javascript. You can create a student class, define the getter and setter methods and print the properties created for the class.
+            </h3>
+         <script>
+            //declaring classes
+           class Student{
+            constructor(){
+                var name ;
+                var marks;
+            }
+            getName(){
+                return this.name;
+            }
+            setName(name){
+                 this.name= name;
+            }
+            getMarks(){
+                return this.marks  ;
+            }
+            setMarks(marks){
+                this.marks= marks;
+            }
+           }
+           var stud = new Student();
+           stud.setName("joel");
+           stud.setMarks(20);
+           document.writeln(stud.getName() + "has secured" + stud.getMarks() + "marks");
+      </body>
+    </html>
+  </DOCTYPE>
+  

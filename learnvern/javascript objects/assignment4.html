@@ -1,0 +1,65 @@
+<DOCTYPE html>
+  <html>
+    <head>
+      <title>Assigment 4</title>
+      <style>
+        body {
+          text-align: center;
+        }
+      </style>
+    </head>
+    <body>
+      <script>
+        document.writeln("<h1>creating Object by litteral method</h1>");
+        var person = {
+          firstname: "Vishal",
+          lastname: "Aradwad",
+          age: "25",
+        };
+        document.writeln(
+          "My name is" +
+            person.firstname +
+            person.lastname +
+            "and my age is " +
+            person.age
+        );
+        document.writeln("<br>" + JSON.stringify(person));
+        document.writeln("<h1>creating array by using constructor method</h1>");
+        var arr = new Array(10, 20, 30, 40, 50, 60, 70, 80, 90, 100);
+        var arr1 = [10, 20, 30, 40, 50, 60, 70, 80, 90, 100];
+
+        document.writeln("<h3>operation 1</h3>");
+        document.writeln(arr1.find((x) => [x < 40]));
+
+       
+
+        document.writeln("<h3>operation 2</h3>");
+        const max = Math.max(10, 20, 30, 40, 50, 60, 70, 80, 90, 100);
+       
+        document.writeln("<br>" + arr.indexOf(max));
+        document.writeln("<h3>Question 4</h3>");
+        const str = new String( `"   This is Learnvern  "`);
+        var str1 = "   This is Learnvern   ";
+        var str2 = "    Learnvern is amazing place to learn   ";
+        document.writeln("<br>" + str1.substr(11,16));
+        document.writeln("<br>" +str1.concat(str2));
+        document.writeln(str1.trim());
+        document.writeln("<h3>Question 5</h3>");
+        var d1 = new Date();
+        document.writeln( d1);
+        document.writeln("<br>" + d1.getDate() +  '/' + d1.getMonth() +  '/' +  d1.getFullYear());
+        document.writeln("<h3>Question 5</h3>");
+        var arr = [10,20,30,40,50,60,70,80,90,100];
+        document.writeln(Math.max(10,20,30,40,50,60,70,80,90,100));
+        document.writeln("<br>" + Math.min(10,20,30,40,50,60,70,80,90,100));
+        let x = 1.5;
+        document.writeln("<br>" + Math.cos(x));
+        document.writeln("<h3>Question 6</h3>");
+        document.writeln("<br>" + Number.isInteger(102));
+        document.writeln("<br>" + Number.isNaN(102));
+        document.writeln("<br>" + Number.isInteger(13e4));
+        document.writeln("<br>" + Number.isInteger('abc'));
+      </script>
+    </body>
+  </html>
+</DOCTYPE>

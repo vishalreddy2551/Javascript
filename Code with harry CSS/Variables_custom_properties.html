@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>CSS variables and custom properties</title>
+        <style>
+            /* root is used to apply css as global means to all  */
+            :root{
+                --primary-color: blue;
+                --secondary-color: yellow;
+                --tertiry-color: green;
+                --max-width: 700px;
+            }
+            .container{
+                display: flex;
+                justify-content: center;
+                background-color: var(--secondary-color);
+            }
+            .box{
+                /* --box-color:tomato; */
+                width: var(--max-width);
+                background-color: var(--primary-color);
+                height: 200px;
+                border: 2px solid var(--secondary-color);
+                box-shadow: 3px 3px var(--tertiry-color);
+                margin: 2px 9px;
+               
+                
+            }
+        </style>
+
+    </head>
+    <body>
+        <div class="container">
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+        </div>
+
+    </body>
+
+</html>

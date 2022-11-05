@@ -1,0 +1,45 @@
+<DOCTYPE html>
+  <html>
+    <head>
+      <title>Events in Javascript:Mouse events</title>
+      <style>
+        .mouseover {
+          width: 100px;
+          height: 100px;
+          background-color: cyan;
+          margin: 10px;
+        }
+      </style>
+    </head>
+    <body>
+      <form action="" onsubmit="onSubmit()">
+        <!-- onsubmit always written in form tag -->
+        <h1>Form Events:</h1>
+
+        <input type="text" value="" onfocus="onFocus()" onblur="onBlur()" />
+        <select name="" id="mydropdown" onchange="onChange()">
+            <option value="">--select--</option>
+            <option value="">Male </option>
+            <option value=""> female</option>
+            <option value=""> other</option>
+        </select>
+        <input type="submit" value="submit"   />
+      </form>
+
+      <script>
+        function onFocus() {
+          document.body.style.background = "yellow";
+        }
+        function onBlur() {
+          document.body.style.background = "white";
+        }
+        function onChange() {
+          document.body.style.background = "green";
+        }
+        function onSubmit() {
+          alert("you have sucessfully filled the form");
+        }
+      </script>
+    </body>
+  </html>
+</DOCTYPE>

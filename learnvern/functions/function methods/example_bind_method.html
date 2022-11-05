@@ -1,0 +1,21 @@
+<DOCTYPE html>
+  <html>
+    <head>
+      <title>example for bind() function method-1</title>
+    </head>
+    <body>
+      <script>
+        var website = {
+          name: "VishalReddy",
+          getName: function() {
+            return this.name;
+          }
+        }
+        var unboundGetName = website.getName;
+        var boundGetName = unboundGetName.bind(website);
+        // document.write(website.getName());
+        document.write(boundGetName());
+      </script>
+    </body>
+  </html>
+</DOCTYPE>

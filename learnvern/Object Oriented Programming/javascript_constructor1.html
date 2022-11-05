@@ -1,0 +1,36 @@
+<DOCTYPE html>
+    <html>
+      <head>
+        <title>javascript constructor: super keyword</title>
+        <style>
+          body {
+            text-align: center;
+          }
+        </style>
+      </head>
+      <body>
+        <h3>javascript constructor: super: used whenever we want to create an object of parent class or to call parent class constructor</h3>
+        <script>
+            //In class constructor needs to be present to create an objects
+            /*parent class*/
+            class companyName{
+                constructor(){
+                    this.company = "L&T"
+                }
+            }
+            /*child class*/
+            //whenever we want to create child class we use extend keyword 
+            class Employee extends companyName{
+                constructor(id,name){  //constructor with creating parameters(dynamic data)
+                super()  ;  //used to call parent constructor
+                this.id = id;
+                this.name = name;
+                }
+            }
+           var emp = new Employee(1,"Vishal Reddy");//here constructor is used to create new object emp
+           document.writeln(emp.id + " " + emp.name + emp.company);
+        </script>
+        
+      </body>
+    </html>
+  </DOCTYPE>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Position</title>
+    <style>
+      * {
+        margin: 0%;
+        padding: 0%;
+      }
+      .container{
+        
+        display: block;
+        margin: auto;
+        width: 1200px;
+      }
+      .box {
+        border: 3px solid grey;
+        display: inline-block;
+        margin: 3px;
+        background-color: yellow;
+        width: 300px;
+        height: 300px;
+        padding: 3px;
+        box-sizing: border-box;
+      }
+      #box1{
+        position: static;
+      }
+      #box2{
+        position: absolute;
+        top: 300px; 
+        left:300px ;
+      }
+      #box3{
+        position: absolute;
+        top: 600px; 
+        left:600px ;
+      }
+      #box4{
+        position: absolute;
+        top: 900px; 
+        left: 900px ;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box" id="box1"></div>
+    <div class="box" id="box2"></div>
+    <div class="box" id="box3"></div>
+    <div class="box" id="box4"></div>
+  </body>
+</html>

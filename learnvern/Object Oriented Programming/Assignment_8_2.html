@@ -1,0 +1,40 @@
+<DOCTYPE html>
+  <html>
+    <head>
+      <title>Assignemnt 8</title>
+      <style>
+        body {
+          text-align: center;
+        }
+      </style>
+    </head>
+    <body>
+      <h3>
+        create object with properties : create atleast five instances of object, Using appropriate method get the employee name with highest salary
+      </h3>
+
+      <script>
+        //initialize object
+        function Employee(id,name,salary) {
+          this.id = id;
+          this.name = name;
+          this.salary = salary;
+        }
+        var e1 = new Employee("Hello my id is" + 2 + "and my name is " + "pratik patel" + "my salary is " + 12500);
+        for(value in e1){
+          document.writeln(e1[value]+" ");
+        }
+
+        var e2 = new Employee( 2,"pratik patel",12500);
+        var e3 = new Employee( 2,"pratik patel",12600);
+        var e4 = new Employee( 2,"pratik patel",12700);
+        var e5 = new Employee( 2,"pratik patel",12800);
+        var e6 = new Employee( 2,"pratik patel",12900);
+
+      
+      
+       
+      </script>
+    </body>
+  </html>
+</DOCTYPE>

@@ -1,0 +1,26 @@
+<DOCTYPE html>
+  <html>
+    <head>
+      <title>javascript methods</title>
+    </head>
+    <body>
+      <h1>creating methods in objects</h1>
+      <script>
+        function employee(id, name, salary) {
+          this.id = id;
+          this.name = name;
+          this.salary = salary;
+
+          this.changesalary = changesalary;
+         function changesalary(othersalary) {
+             this.salary = othersalary;
+           }
+        }
+        var e = new employee(2, "vishal reddy", 150000);
+        document.writeln(e.id + e.name + e.salary +"<br>");
+        e.changesalary(50000);
+        document.writeln(e.id + e.name + e.salary);
+      </script>
+    </body>
+  </html>
+</DOCTYPE>

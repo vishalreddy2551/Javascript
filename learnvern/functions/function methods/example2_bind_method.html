@@ -1,0 +1,42 @@
+<DOCTYPE html>
+    <html>
+      <head>
+        <title>example for  binding function method-1</title>
+        <style>
+          body{
+              text-align: center;
+              font-size: 3rem;
+          }
+        </style>
+      </head>
+      <body>
+        <!-- <script>
+            var name= {
+                firstname: "Vishal",
+                lastname: "reddy",
+                printname: function(){
+                    document.write(this.firstname + this.lastname);
+                }
+            }
+            var printname_1= name.printname.bind(name);
+            printname_1(); -->
+
+            <!-- OR -->
+            <script>
+                var geeks = {
+                name : "Vishal",
+                surname: "Reddy",
+                printFunc: function(){
+                document.write(this.name + this.surname);}
+                }
+                    
+                var printFunc2= geeks.printFunc.bind(geeks);
+                //using bind()
+                // bind() takes the object "geeks" as parameter//
+                printFunc2();
+                </script>
+                
+        </script>
+      </body>
+    </html>
+  </DOCTYPE>

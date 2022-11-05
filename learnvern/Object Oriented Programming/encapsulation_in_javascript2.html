@@ -1,0 +1,62 @@
+<DOCTYPE html>
+  <html>
+    <head>
+      <title>Encapsulation in javascript</title>
+      <style>
+        body {
+          text-align: center;
+        }
+      </style>
+    </head>
+    <body>
+      <h3>Encapsulation in javascript: Prototype based</h3>
+      <script>
+        //prototypebased approach
+        function Student(name, marks) {
+          var sName = name; //to make variable private var is used instead of this.
+          var sMarks = marks;
+          Object.defineProperty(this, "name", {
+            get: function () {
+              return sName;
+            },
+            set: function (sName) {
+              this.sName = sName;
+            },
+          });
+          Object.defineProperty(this, "marks", {
+            get: function () {
+              return sMarks;
+            },
+            set: function (sMarks) {
+              this.sMarks = sMarks;
+            },
+          });
+        }
+        var stud = new Student("vishal", 50);
+        document.writeln(stud.name + "has secured" + stud.marks + "marks");
+      </script>
+      <script>
+        function Employee(name,id){
+            var s_name = name;
+            var s_id = id;
+            Object.defineProperty(this,"name",{
+                get: function(){
+                    return s_name;
+                },
+                set:function(s_name){
+                     this.s_name = name;
+                }
+            })
+            Object.defineProperty(this,"id",{
+                get: function(){
+                    return s_id;
+                },
+                set:function(s_id){
+                     this.s_id = id;
+                }
+            })
+        }
+      </script>
+    </body>
+  </html>
+</DOCTYPE>

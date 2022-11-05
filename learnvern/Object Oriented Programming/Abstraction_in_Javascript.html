@@ -1,0 +1,28 @@
+<DOCTYPE html>
+    <html>
+      <head>
+        <title>Abstraction in javascript </title>
+        <style>
+          body {
+            text-align: center;
+          }
+        </style>
+      </head>
+      <body>
+        <h3>Abstraction in javascript: Can we create instance?</h3>
+         <script>
+         //craeting constructor function
+         function Vechile(){
+            //this.vechileName = vechileName;
+            throw new Error("You cannot create an instance of Abstract class");
+         }
+         Vechile.prototype.display= function(){
+            return this.vechileName;
+         }
+         var v1 = new Vechile();
+         
+        </script>
+        
+      </body>
+    </html>
+  </DOCTYPE>

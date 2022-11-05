@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <!-- <p>
+      Write Banana, Orange or Apple in the input field and click the button.
+    </p> -->
+    <p>
+      The switch statement will execute a block of code based on your input.
+    </p>
+
+    <input id="myInput" type="text" />
+
+    <button onclick="myFunction()">Try it</button>
+
+    <p id="demo"></p>
+
+    <script>
+      function myFunction() {
+        var text;
+        var days = document.getElementById("myInput").value;
+
+        switch (days) {
+          case "monday":
+            text = "wake up at 10";
+            break;
+          case "tuesday":
+          case "Wednesday":
+          case "thrusday":
+            text = "Wake up at 8AM";
+            break;
+          case "sunday":
+            text = "rest day";
+            break;
+          default:
+            text = "None.";
+        }
+        document.getElementById("demo").innerHTML = text;
+      }
+
+      // let a = prompt("Hey whats your age?");
+      // a = Number.parseInt(a);
+      // if (a > 0) {
+      //   alert("This is a valid age");
+      // }
+    </script>
+  </body>
+</html>

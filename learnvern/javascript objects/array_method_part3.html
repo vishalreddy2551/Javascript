@@ -1,0 +1,47 @@
+<DOCTYPE html>
+    <html>
+      <head>
+        <title>javascript arrays methods part 3</title>
+        <style>
+          body {
+            text-align: center;  
+          }
+        </style>
+      </head>
+      <body>
+        <script>
+           console.log("array method includes()");
+          var array1 = ["vish", "vishu", "vishal"];
+          var array2 = ["sanjay", "p", "reddy"];
+          var array3 = ["50", "70", "20"];
+          
+          console.log(array1.includes("vish"));
+
+          console.log("array method indexof()");
+          console.log(array1.indexOf("vish"));
+          console.log(array1.indexOf("baby"));//will return -1 which indicates element is not present
+        
+          console.log("array method isArray()");
+          console.log(Array.isArray(1,5,6,9,10));
+          console.log("to check if array1 is array or not " + Array.isArray(array1));
+
+          console.log("array method join()");
+          console.log(array1.join('-'));
+
+          console.log("array method key()");
+          var keyArray = array1.keys();
+          console.log(keyArray);
+          for (k of keyArray) {
+            console.log(k )
+          }
+
+          console.log("array method lastindexof()");
+          console.log(array1.lastIndexOf("vish"));//starts checking from last
+
+          console.log("array method map()");
+          console.log(array3.map(x=>[x/5]));
+           //map means map one value on another
+        </script>
+      </body>
+    </html>
+  </DOCTYPE>

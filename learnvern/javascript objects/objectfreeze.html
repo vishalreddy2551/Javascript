@@ -1,0 +1,25 @@
+<DOCTYPE html>
+    <html>
+      <head>
+        <title>javascript methods: freeze()</title>
+      </head>
+      <body>
+        <h1>creating methods in objects</h1>
+        <!-- when we dont want to modify any properties from object freeze is used -->
+        <script>
+          const obj1 = {
+            age:23
+          }
+          const obj2= Object.freeze(obj1);
+          obj2.age =32;
+          console.log(obj2);
+        //   we have frooze the obj2 from modifying any properties
+
+          //checking isfrozen method
+
+          console.log(Object.isFrozen(obj2));
+        
+        </script>
+      </body>
+    </html>
+  </DOCTYPE>
