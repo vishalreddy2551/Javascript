@@ -10,8 +10,11 @@ const currtime = new Date().toLocaleTimeString();
 
 ReactDOM.render(
   <>
-   <h1>{my name is }</h1>
-  </>
-)
+   <h1>{`my name is ${fname}` }</h1>
+   <P>currdate = {currdate}</P>
+   <P>currdate = {currtime}</P>
+  </>,
+  document.getElementById("root")
+);
 
 

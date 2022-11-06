@@ -1,0 +1,36 @@
+<DOCTYPE html>
+  <html>
+    <head>
+      <title>promise chaining</title>
+      <style>
+        body {
+          text-align: center;
+        }
+      </style>
+    </head>
+    <body>
+      <h3>Example on spromise chaining</h3>
+      <p id="result"></p>
+      <script>
+        new Promise(function (resolve, reject) {
+          setTimeout(function (){resolve(1)}, 3000);//or
+          setTimeout(() =>{resolve(1)},2000)//arrow method
+        })
+          .then(function (value) {
+            alert(value);
+            return value * 2;
+          })
+          .then(function (value) {
+            alert(value);
+            return value * 3;
+          })
+          .then(function (value) {
+            alert(value);
+            return value * 4;
+          }).then(function(value){
+            alert(value);
+          })//here we are using promise result and performing operations on it it is called promise chaning
+      </script>
+    </body>
+  </html>
+</DOCTYPE>

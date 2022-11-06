@@ -1,0 +1,37 @@
+<DOCTYPE html>
+  <html>
+    <head>
+      <title>Error handling: Assignment 12</title>
+      <style>
+        body {
+          text-align: center;
+        }
+      </style>
+    </head>
+    <body>
+      <h3>Error handling: question: 1</h3>
+      <script>
+        try {
+          var fruits = ["orange", "banana", "pineapple", "apple"];
+          document.writeln(fruits);
+          document.writeln(car);
+        } catch (e) {
+          document.writeln("<br>" + " error is" + e.message +"<br>"+"<br>"+"<br>");
+        }
+      </script>
+      
+      <script>
+      
+          try {
+            var b = 0;
+            var a = 5 / b;
+           
+            if (b = 0) throw "any number divided by 0 is not possible";
+          } finally {
+            document.write("Exception handled sucessfully");
+          }
+        
+      </script>
+    </body>
+  </html>
+</DOCTYPE>

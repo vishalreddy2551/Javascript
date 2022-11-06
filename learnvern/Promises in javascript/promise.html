@@ -12,7 +12,23 @@
         <h3>promise in javascript</h3>
         <p id="result"></p>
         <script>
+           function display(demo){
+            document.getElementById("result").innerHTML= demo;
+           } 
+           let promise = new Promise(function(myResolve,myReject){
+            let x =1;
 
+            if(x==1){
+              myResolve("ok");
+            }else{
+              myReject("Error");
+            }
+           });
+
+          promise.then(
+            function(value){display(value); },
+            function(error){display(error); }
+          );
         </script>
         
       </body>

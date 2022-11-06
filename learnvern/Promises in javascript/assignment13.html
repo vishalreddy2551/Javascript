@@ -1,0 +1,35 @@
+<DOCTYPE html>
+  <html>
+    <head>
+      <title>assignment 13_1</title>
+      <style>
+        body {
+          text-align: center;
+        }
+      </style>
+    </head>
+    <body>
+      <h3>question1</h3>
+      <p id="result"></p>
+      <script>
+        setTimeout(function () {
+          myfunction("Vishal");
+        }, 2000);
+        function myfunction(value) {
+          document.getElementById("result").innerHTML = value;
+        }
+      </script>
+      <h3>question2</h3>
+      <script>
+        new Promise(function (resolve, reject) {
+          setTimeout(function () {
+            resolve(10);
+          }, 3000);
+        }).then(function (value) {
+          alert(value * 3);
+          return value;
+        });
+      </script>
+    </body>
+  </html>
+</DOCTYPE>

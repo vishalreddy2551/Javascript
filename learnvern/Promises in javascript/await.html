@@ -1,0 +1,26 @@
+<DOCTYPE html>
+    <html>
+      <head>
+        <title>await</title>
+        <style>
+          body {
+            text-align: center;
+          }
+        </style>
+      </head>
+      <body>
+        <h3>await</h3>
+        <p id="result"></p>
+        <script>
+           async function mydisplay(){
+            let promise = new Promise(function(resolve,reject){
+                setTimeout(function(){resolve("Hello Vishal")},3000)
+            })
+            document.getElementById("result").innerHTML = await promise;
+           }
+           mydisplay();
+        </script>
+      </body>
+    </html>
+  </DOCTYPE>
+  

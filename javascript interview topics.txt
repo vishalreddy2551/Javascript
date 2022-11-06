@@ -1,0 +1,12 @@
+variables
+data types
+operator
+if,switch,loop
+functions
+javascript objects,arrays,string >> properties,methods
+DOM
+class
+object
+constructor method
+events >> onclick,dblclick,onload,onresize
+this keyword,hoisting

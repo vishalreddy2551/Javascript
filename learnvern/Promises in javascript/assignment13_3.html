@@ -1,0 +1,48 @@
+<DOCTYPE html>
+  <html>
+    <head>
+      <title>assignment 13_1</title>
+      <style>
+        body {
+          text-align: center;
+        }
+      </style>
+    </head>
+    <body>
+      <h3>question-3</h3>
+      <p id="result"></p>
+      <script>
+          let unAuthorized = false;
+          let Authorised = true;
+          function getElementById(id){
+            return new Promise((resolve,reject) => {
+                if(unAuthorized){
+                    throw new Error("user is not Authorised");
+                }
+              
+                resolve({
+                    id:id,
+                    username: "admin",
+                });
+            });
+          }
+          try{
+            getElementById(7).then(user => console.log(user.username)).catch((error) => console.log('Caught by .catch' + error));
+          }catch(e){
+            console.log('Caught by try/catch{$error}')
+          }
+      </script>
+      <h3>question-4</h3>
+      <p id="demo"></p>
+      <script>
+        async function mydisplay(){
+         let promise = new Promise(function(resolve,reject){
+            setTimeout(function(){resolve("Hello Vishal"),3000})
+         })
+         document.getElementById("result").innerHTML = await promise;
+        }
+        mydisplay();
+      </script>
+    </body>
+  </html>
+</DOCTYPE>

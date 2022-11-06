@@ -1,0 +1,27 @@
+<DOCTYPE html>
+    <html>
+      <head>
+        <title>API in promise</title>
+        <style>
+          body {
+            text-align: center;
+          }
+        </style>
+      </head>
+      <body>
+        <h3>API in promise: Promise.any</h3>
+        <p id="result"></p>
+        <script>//Promise.race always executes 1st promise and returns the output
+        promise = Promise.any([
+               new Promise( (resolve,reject) => setTimeout( reject(new Error("it's an error")),1000) ),
+            //     new Promise( (resolve,reject) => setTimeout( resolve(1),2000) ),
+            //    new Promise( (resolve,reject) => setTimeout( resolve(1),3000) ),
+               new Promise( (resolve,reject) => setTimeout( reject(new Error("it's an error")),4000) ),
+           ])/*.then(alert); or */.catch(error => {console.log(error[0])} );
+           
+        </script>
+           
+        
+      </body>
+    </html>
+  </DOCTYPE>

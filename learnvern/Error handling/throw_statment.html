@@ -1,0 +1,39 @@
+<DOCTYPE html>
+    <html>
+      <head>
+        <title>Error handling</title>
+        <style>
+          body {
+            text-align: center;
+          }
+        </style>
+      </head>
+      <body>
+        <h3>Error handling: throw error</h3>
+      please a number between 5 to 10
+        <input type="text" id="id1">
+        <button type="button" onclick="onClick()">Validate</button>
+        <p id="message"></p>
+        <p id="input1"></p>
+        <script>
+          function onClick(){
+            try {
+            var input = document.getElementById("input1").value;
+            var x = document.getElementById("id1").value;
+            message.innerHTML = "";
+
+            if(x == "") throw "is empty";
+            if(isNaN(x)) throw "this is not number";
+            if(x>5 || x>10) throw "not a valid number";
+            } catch (e) {
+            document.getElementById("message").innerHTML ="Input" + e;//e is used for error Handling
+          }
+          finally{
+            document.writeln("value entered: " + x);
+          }
+          }
+        </script> 
+      </body>
+    </html>
+  </DOCTYPE>
+  

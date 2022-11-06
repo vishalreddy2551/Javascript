@@ -1,0 +1,38 @@
+<DOCTYPE html>
+    <html>
+      <head>
+        <title>Variables part 1</title>
+        <style>
+          body {
+            text-align: center;
+          }
+        </style>
+      </head>
+      <body>
+        <h1>Javascript variables: how to declare global variable</h1>
+        <script>
+            var x = 15;//decalred outside the function
+            function abc(){
+                 document.writeln(x); 
+            }
+            function cde(){
+                 document.writeln(x); 
+            }
+           abc();
+           cde();
+           (function def(){
+                 window.y = 20; 
+                //  alert(window.y);
+            })();
+            (function efg(){
+                 alert(window.y);
+                //  document.writeln(window.y) ;
+            })();
+           
+        </script>
+  
+
+      </body>
+    </html>
+  </DOCTYPE>
+  

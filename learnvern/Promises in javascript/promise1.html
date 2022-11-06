@@ -1,0 +1,25 @@
+<DOCTYPE html>
+    <html>
+      <head>
+        <title>promise in javascript: Example 2 </title>
+        <style>
+          body {
+            text-align: center;
+          }
+        </style>
+      </head>
+      <body>
+        <h3>promise in javascript: example of timeout using callback</h3>
+        <p id="result"></p>
+        <p>The result will be dispalyed after 3 sec</p>
+        <script>
+          setTimeout(function(){myfunction("Vishal Please focus on Studies");},3000);
+          //we are using callback here : we are calling myfunction in timeout function
+          function myfunction(value){
+            document.getElementById("result").innerHTML = value;
+          }
+        </script>
+        
+      </body>
+    </html>
+  </DOCTYPE>

@@ -1,0 +1,24 @@
+<DOCTYPE html>
+    <html>
+      <head>
+        <title>Javascript function object</title>
+        <style>
+          body {
+            text-align: center;
+          }
+        </style>
+      </head>
+      <body>
+        <h1>Javascript function object</h1>
+        <script>
+           var add = new Function("num1","num2","return num1 + num2");
+           var mult = new Function("num3","num4","return Math.pow(num3,num4)");
+           document.writeln(add(2,8));
+           document.writeln("<br>" + mult(2,8));
+        </script>
+  
+
+      </body>
+    </html>
+  </DOCTYPE>
+  

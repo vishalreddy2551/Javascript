@@ -1,0 +1,49 @@
+<DOCTYPE html>
+    <html>
+      <head>
+        <title>apply()</title>
+        <style>
+          body {
+            text-align: center;
+          }
+        </style>
+      </head>
+      <body>
+        <h1>Javascript object method: apply()</h1>
+        <script>
+            var x = [5,6,1,6,9];
+           var max =  Math.max.apply(null,x);//or
+           var max =  Math.max.apply(this,x);
+           document.writeln(max);
+        </script>
+        <h4>joining two arrays using appy() method</h4>
+         <script>
+            var arr = [1,2,3,4,5,6];
+            var arr1 = [7,8,9,10,11];
+            
+            arr.push.apply(arr,arr1);
+            document.writeln("concatenated array is: ");
+            for(value of arr){
+                document.writeln(value);
+            }
+         
+         </script>
+         <h1>Javascript object method: bind()</h1>
+         <script>
+            //initializing object
+            var website = {
+                name: "javascript",
+                //function or method
+                getname: function(){
+                    return this.name;
+                }
+            }
+            var unboundGetName = website.getname;// craeting object for getting getname function and for binding 
+            var boundGetName = unboundGetName.bind(website);//binding website and getname
+            document.writeln(boundGetName());
+           
+         </script>
+      </body>
+    </html>
+  </DOCTYPE>
+  
